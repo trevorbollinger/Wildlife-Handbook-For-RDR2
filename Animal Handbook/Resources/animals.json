@@ -1,0 +1,1377 @@
+[{
+    "id": "ee78db44-fe0a-44e5-a635-9c3334d2df92",
+    "name": "Alligator",
+    "description": "The alligator is a large reptile endemic to Bayou Nwa in Lemoyne. They come in two sizes - regular and small - and each has its own compendium page, however they are the same species.\n\nA skin from a regular-sized alligator will take up the large carcass space on the back of the player's horse, but a skin from a small size alligator can be layered on like hides from deer, etc.\n\nA small alligator carcass can be placed on the back of the horse, but a regular size carcass cannot be picked up, like the Boar. One perfect alligator skin is needed for the Alligator Ranch Cutter Saddle at the Trapper.\n\nDespite their size and ability to kill players very quickly, alligators can be easily killed via a single shot to the head by a rifle. Throwing a Tomahawk at its head will kill it instantly.\n\nThe alligator attacks by clamping the torso of the player with their jaw and swinging them about, killing them almost instantly.",
+    "location": [
+        "Bayou Nwa",
+        "Bluewater Marsh (south)",
+        "River regions of Lemoyne"
+    ],
+    "loot": [
+        "Alligator Skin",
+        "Alligator Tooth",
+        "Big Game Meat",
+        "Alligator Carcass"
+    ],
+    "tips": "A rifle will easily kill an alligator, because of its ability to pierce through the animal's tough skin.\n\nA Rolling Block Rifle will allow the player to kill them from a farther distance without having to risk getting close.\n\nA bow shot with improved or poisoned arrows directly in the head is also a good alternative.\n\nAlligators cannot be skinned in water. As their bodies cannot be carried up nor lassoed and dragged back to land, It is best to find and kill an alligator lying on the shore.\n\nAlligator eggs can be sold for a good profit, with each bundle earning around $12.\n\nAlligators are one of the quickest and easiest ways to acquire Big Meat for seasoning and eating to gain a golden core, as they spawn in large numbers and, unlike other predators, most just lie still near the shores of Bayou Nwa and only attack or fight back if the player comes too close to them.\n\nAlligators are also one of the quickest ways to replenish the materials meter when donating to Cripps if the player has the Trader role in Red Dead Online, as they are easy-to-hunt predators and the smaller alligators can have their carcasses fully donated for a quicker refill, especially if the player's camp is set up near an alligator spawn point (like Bayou Nwa).",
+    "trivia": "",
+    "danger": "5"
+},{
+    "id": "74ac722b-99ec-4088-bb09-9e2aab5fe104",
+    "name": "Armadillo",
+    "description": "The armadillo is a short, stout mammal with strong bands of body armor and a scaly tail. Despite their short legs, armadillos move quite quickly, making them difficult to catch.\n\nThey are endemic to the south-western part of the map, generally in New Austin as the warm, desert-like environments allow these creatures to thrive.",
+    "location": [
+        "Cholla Springs",
+        "Gaptooth Ridge",
+        "Río Bravo"
+    ],
+    "loot": [
+        "Armadillo Skin",
+        "Stringy Meat",
+        "Armadillo Carcass"
+    ],
+    "tips": "",
+    "trivia": "'Armadillo' is Spanish for 'little armored one'.\n\nThe Desperado outfit needs a Perfect Armadillo Skin to be completed. As their habitats are only found in the New Austin deserts, this outfit can only be acquired after the game's epilogue. However, there are some exploits that allow for the outfit to be obtained earlier.",
+    "danger": "X"
+},{
+    "id": "12481126-baeb-47e9-a5c0-e03fd8c8a5ee",
+    "name": "Badger",
+    "description": "Badgers are moderately sized mammals. They are aggressive omnivores that prey on smaller mammals, such as squirrels and moles, and their diet also consists of small insects, earthworms and grubs.\n\nIn appearance, they have wide, fat bodies with short legs, and an elongated head with small ears.\n\nIn color, they have a grey body and their head has black stripes combined with white markings.",
+    "location": [
+        "Everywhere but Grizzlies West"
+    ],
+    "loot": [
+        "Badger Pelt",
+        "Badger Claw",
+        "Stringy Meat",
+        "Badger Carcass"
+    ],
+    "tips": "The badgers’ pelts and claws don’t go for much in the market, but you can use them to craft all kinds of stuff.\n\nThe carcasses can be sold for $3 is they’re in good condition, so you even stand to make some money if it’s pelts and claws you’re after.\n\nThe Varmint Rifle will kill them but won’t damage the remains, which makes it the perfect weapon for clean kills.",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "03c35ce7-3647-42ba-abc3-653c04949142",
+    "name": "Bat",
+    "description": "The Little Brown Bat is found across most of America. They are insectivores, feeding on mosquitoes, wasps, beetles, and midges. Due to the size of this species of bat, they can be killed with less impact. A Bow with Small Game Arrows can be used successfully for hunting. Its meat is stringy but edible, and its wings can be used to craft with.",
+    "location": [
+        "Elysian Pool",
+        "Bolger Glade",
+        "Solomon's Folly",
+        "Bluewater Marsh"
+    ],
+    "loot": [
+        "Bat Wing",
+        "Stringy Meat",
+        "Bat Carcass"
+    ],
+    "tips": "",
+    "trivia": "As part of the Wildlife Art Exhibition task, 'A Better World, A New Friend', a perfect bat carcass is required to be mailed to Ms. L. Hobbs.",
+    "danger": "X"
+},
+{
+    "id": "99e1f5c9-55a3-46d2-a4fc-f94e53118e68",
+    "name": "Beaver",
+    "description": "The North American Beaver can be found along the Kamassa River in Roanoke. Its herbivorous diet consists of tree bark, cambium, roots, buds, and water plants. A Varmint Rifle is the ideal weapon for hunting beavers. Beaver scent glands, skin and fat can all be used for crafting",
+    "location": [
+        "Shady Belle",
+        "Owanjilla",
+        "Upper Montana River (northern end)",
+        "Huron Glen"
+    ],
+    "loot": [
+        "Beaver Pelt",
+        "Animal Fat",
+        "Scent Glands",
+        "Stringy Meat",
+        "Beaver Carcass"
+    ],
+    "tips": "The Beaver Roping saddle available from the Trapper is arguably the best saddle in the game when it comes to health, and gives the following bonuses:\n-26% HP core drain\n-20% Stamina core drain\n-50% Stamina drain\n+24 Stamina regeneration rate\n+2 to both speed and acceleration\n\nWhile A Varmint Rifle is the best weapon for hunting beavers, it's still not powerful enough to kill beavers in a single shot if the bullet hits the torso.\n\nIf beavers are spooked, they will immediately escape into the water, thus deny players chance to skin them.\n\nThe best approach to hunt beavers is shooting them in the head from a distance while the beavers are on the shore. Equipping a Varmint Rifle with a scope is also recommended.",
+    "trivia": "As part of the Wildlife Art Exhibition task, 'A Better World, A New Friend', a perfect Beaver carcass is required to be mailed to Ms. L. Hobbs.",
+    "danger": "X"
+},
+{
+    "id": "515925d5-8979-4265-ae68-7f26899f4db9",
+    "name": "Bison",
+    "description": "The American Bison is native to the plains of New Hanover and West Elizabeth. As a herbivore, it grazes on grains, hay, and corn. Due to the size of an average bison, high powered weapons like a Carcano Rifle, or a Bow with Improved Arrows, should also be considered when hunting. Bison meat can be used for cooking",
+    "location": [
+        "Great Plains",
+        "Hennigan's Stead (southwest)",
+        "The Heartlands (southwest)",
+        "Emerald Ranch (west)"
+    ],
+    "loot": [
+        "Bison Pelt",
+        "Bison Horn",
+        "Prime Beef"
+    ],
+    "tips": "A rifle (non-sighted or scoped) is recommended to hunt the bison.\nWhile sniper rifles, loaded with Regular cartridges is sufficient to take down bison in one shot, other rifles need to be loaded with Express cartridges to do the same.\n\nThe player can cook the Prime Beef Joint meal from the bison's hunted goods.",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "8bc30bb4-b5ab-4226-bfd3-a6ccb158391c",
+    "name": "Black Bear",
+    "description": "The Black Bear is a species of Animals found mostly in mountainous areas. They are smaller in size than the Grizzly Bear. Their diet is omnivorous, consisting of salmon, honey, fruit, small mammals and carrion.\n\nTheir fur is soft, with dense underfur and long, coarse, thick guard hairs. However, the fur is not as shaggy or coarse as that of a Grizzly Bear.\n\nBlack Bears will flee from the player and are passive, but are still marked as hostile on the mini-map, and will spook the player's horse.",
+    "location": [
+        "Big Valley (northwest)",
+        "Bayou Nwa (northwest)",
+        "Roanoke Ridge (forested areas)",
+        "Grizzlies East",
+        "East of Aurora Basin"
+    ],
+    "loot": [
+        "Bear Pelt",
+        "Animal Fat",
+        "Black Bear Claw",
+        "Big Game Meat"
+    ],
+    "tips": "A Long Scoped Rifle or a Bow with Improved Arrows are recommended when hunting this animal.\n\nTheir claws and fat can be used for crafting and their meat is added to the player's inventory in the form of Big Game Meat.\n\nPlayers can craft a Bear Fringed Shotgun Chaps and a Bear Grenadier Hat at the Trapper using its materials, and cook the meat from hunting it.\n\nBlack bears will always flee from the player, despite being marked as hostile in-game.\nOne notable exception is during the Online mission 'A Bitter Means to a Bitter End'; any black bears encountered during this mission can maul the player.",
+    "trivia": "Rank 5 of the Master Hunter Challenges requires the player to skin three black or grizzly bears.",
+    "danger": "5"
+},
+{
+    "id": "67fb51d9-bd9c-4d07-b6bc-f3be1d9d1927",
+    "name": "Blue Jay",
+    "description": "Blue Jays are a semi-common species of bird, found mostly in The Heartlands, as well as throughout most of the map with the exceptions of New Austin and the Grizzlies.",
+    "location": [
+        "Caliban's Seat, Roanoke Ridge"
+    ],
+    "loot": [
+        "Blue Jay Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Blue Jay Carcass"
+    ],
+    "tips": "Players struggling to find a blue jay can check the rocks on the Kamassa River in Roanoke Ridge; several other birds, like the Robin, can also be found in this way.",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "fa477733-0882-4fa8-8d9c-cdfc4c3636c5",
+    "name": "Boar",
+    "description": "Wild Boars can be found across the states of New Hanover, Lemoyne, and West Elizabeth. They are omnivores, preying on amphibian, reptiles, insects, worms and smaller mammals. They also eat roots and fruit. Using either a rifle or a Bow with Poison Arrows is the easiest way to take down an animal of this size. A boar's tender pork can be eaten, and their fat and tusks can be used to craft with.",
+    "location": [
+        "Lemoyne",
+        "Guarma (southern)"
+    ],
+    "loot": [
+        "Boar Pelt",
+        "Boar Tusk",
+        "Animal Fat",
+        "Tender Pork Loin"
+    ],
+    "tips": "The player can obtain a perfect pelt using either a rifle or a Bow with Poison or regular Arrows.",
+    "trivia": "A boar tusk can be found in a chest inside Blackwater Sheriff's Office.",
+    "danger": "X"
+},
+{
+    "id": "f2d5611f-c808-42e5-a5f8-156b6c0cb605",
+    "name": "Booby",
+    "description": "The Red-footed Booby is native to Guarma. As carnivores, they prey on small fish and squid",
+    "location": [
+        "Guarma"
+    ],
+    "loot": [
+        "Booby Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Booby Carcass"
+    ],
+    "tips": "",
+    "trivia": "The Booby is not needed for Skin Deep or Zoologist.",
+    "danger": "X"
+},
+{
+    "id": "7aaea500-a397-4c22-850a-72439edcbed1",
+    "name": "Buck",
+    "description": "The buck is a common animal that can be found everywhere except for grizzlies west. Greater concentrations appear in the eastern regions of the map with New Austin being the sparsest.",
+    "location": [
+        "Everywhere except Grizzlies West"
+    ],
+    "loot": [
+        "Buck Pelt",
+        "Buck Antlers",
+        "Mature Venison",
+        "Buck Carcass"
+    ],
+    "tips": "Rifles or a Bow with standard arrows are recommended for clean kills.\nWhitetails are notoriously difficult to hit in vital areas once running due to the verticality of their movement. If a long-distance kill with a scoped rifle is not possible, a stealth approach is advised.",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "93263518-90e3-4dfe-9350-5020e9cfe43c",
+    "name": "Bull",
+    "description": "Angus Bull:\nThe Angus Bull can be found on farms and ranches across the states. Its herbivorous diet includes grains, hay and corn. The average size of a bull can mean that they are harder to kill. Using a Bow with Improved Arrows, or a high-powered rifle, will increase your chances when hunting. Because they are mostly docile, and usually fenced in, the lasso/knife works well for an assured clean kill. It provides prime beef and horns for crafting with.\n\nDevon Bull:\nThe Devon Bull can be found on farms and ranches across the states. As a herbivore, it consumes grains, hay, and corn. The easiest way to take a bull of this size out is by using a Bow with Improved Arrows, or a powerful rifle. They also yield prime beef for food, and bull horns which can be used for crafting.\n\nHereford Bull:\nThe Hereford Bull can be found at ranches across the states. It is a herbivore, living on grains, hay, and corn. The average size of a bull can mean that they are harder to kill. Using a Bow with Improved Arrows, or a powerful rifle, will increase your chances when hunting. Its meat can be eaten, and its horns are useful for crafting with.",
+    "location": [
+        "Carmody Dell",
+        "Hanging Dog Ranch",
+        "Will Haven Ranch",
+        "Lakay"
+    ],
+    "loot": [
+        "Bull Hide",
+        "Bull Horns",
+        "Prime Beef"
+    ],
+    "tips": "Bulls only spawn at farms and cannot be found in the wild. However, killing them there will most likely result in a shoot-out and/or a bounty. Therefore, it is best to first lure the animal away and then make the kill in an isolated location.\n\nBull Hides are needed for three pieces of clothing from the Trapper.",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "07ed8b7f-5c9b-4f03-b76a-2246d9605f11",
+    "name": "Bullfrog",
+    "description": "The Bullfrog is a small animal found only in Lemoyne.",
+    "location": [
+        "Bayou Nwa"
+    ],
+    "loot": [
+        "Herptile Meat",
+        "Bullfrog Carcass"
+    ],
+    "tips": "The best weapon to kill a Bullfrog is a Bow with Small Game Arrows",
+    "trivia": "As part of the Wildlife Art Exhibition task, 'A Better World, A New Friend', a perfect Bullfrog carcass is required to be mailed to Ms. L. Hobbs.",
+    "danger": "X"
+},
+{
+    "id": "f891d0ee-c271-4e26-b12c-94b95d87d075",
+    "name": "Cat",
+    "description": "The cats in the game appear to be brown/black mackerel tabby in color. Some in-game cats appear to be black silver mackerel tabbies. There is a stocky, a moderate, and a slim variant. All are shorthair.\n\nIn-game, they are referred to as American Domestic Cats. They are sometimes found catching brown rats or small songbirds, or carrying them around.",
+    "location": [
+        "Settlements and Homesteads"
+    ],
+    "loot": [
+        ""
+    ],
+    "tips": "Cats are most commonly found in Strawberry. However, they can also be found in Saint Denis, Valentine, Emerald Ranch, Rhodes, and the Blackwater Cemetery.",
+    "trivia": "The stocky variant looks like the European wildcat (Felis silvestris silvestris), especially with the thicker shape to their tail.\n\nAlthough the player is able to Praise and Scold cats similar to Dogs, the player is unable to pet cats. This has been lamented by many players and game reviewers alike.\nWhen the player greets a cat, the cat will stop in their path (if walking), turn and look at the player, meow several times and might even begin purring. If the player scolds a cat, it will run away.\n\nUnlike Dogs, there is only one breed available for cats.\n\nThe moderate, slim, and thin variants look like the Near Eastern wildcat (Felis silvestris lybica) that originated the domestic cat\n\nDuring night, and in the correct lighting situation, cat's tapetum lucidum will show, and their eyes will glow a bright yellow-green.",
+    "danger": "X"
+},
+{
+    "id": "d63e59cc-48ae-45ba-aa7a-adeef2803d15",
+    "name": "Cardinal",
+    "description": "The Cardinal is a species of bird that can be found throughout most of the map, with New Austin being the main exception. They are found in greatest concentrations along the Dakota River and Painted Sky in the south-central region of the main landmass",
+    "location": [
+        "Everywhere except for New Austin"
+    ],
+    "loot": [
+        "Cardinal Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Cardinal Carcass"
+    ],
+    "tips": "",
+    "trivia": "A Perfect Cardinal is needed for the second request from the Wildlife Art Exhibition",
+    "danger": "X"
+},
+{
+    "id": "8987c9ee-d56e-4970-966e-618fda569732",
+    "name": "Chicken",
+    "description": "Chickens are sizeable birds with thick white/brown feathers. A notable feature is the comb; a red tissue that covers most of their face, particularly around their eyes and chin, and atop their heads. They have short, flowing tails and wide wings.\n\nIn the wild a chicken will usually peck and scratch the ground in search for food; seeds, insects, lizards, small snakes and young mice",
+    "location": [
+        "Settlements"
+    ],
+    "loot": [
+        "Chicken Feather",
+        "Plump Bird Meat",
+        "Chicken Carcass"
+    ],
+    "tips": "Chickens are found scattered throughout the map, but their locations seem to line up with established cities and towns.",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "db576619-c8ac-42bd-915f-86166f7bc0dc",
+    "name": "Chipmunk",
+    "description": "Chipmunks can be found in virtually all locations except for Grizzlies West. The highest concentrations are at the Wapiti Indian Reservation in Grizzlies East, Beaver Hollow in Roanoke Ridge, Rhodes, and Gaptooth Ridge",
+    "location": [
+        "Everywhere except for Grizzlies West"
+    ],
+    "loot": [
+        "Stringy Meat",
+        "Chipmunk Carcass"
+    ],
+    "tips": "A bow with small game arrows is recommended for hunting perfect quality carcasses.",
+    "trivia": "As part of the Wildlife Art Exhibition task, 'A Better World, A New Friend', a perfect Chipmunk carcass is required to be mailed to Ms. L. Hobbs.",
+    "danger": "X"
+},
+{
+    "id": "3b4ae603-16ef-4304-9250-4842fa1dda7d",
+    "name": "Condor",
+    "description": "The Californian Condor is native to New Austin. This carnivorous scavenger's diet mainly consists of carrion, though bird and reptile carcasses are sometimes eaten. A Varmint Rifle is considered to be the best weapon for shooting condors. Its meat is gamey, and its feathers can be used to craft with",
+    "location": [
+        "Cholla Springs",
+        "Gaptooth Ridge",
+        "Río Bravo"
+    ],
+    "loot": [
+        "Condor Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Condor Carcass"
+    ],
+    "tips": "",
+    "trivia": "Condors are the largest bird species in the game",
+    "danger": "X"
+},
+{
+    "id": "048296a6-217c-4c45-8d2e-90fb01736db4",
+    "name": "Cormorant",
+    "description": "",
+    "location": [
+        "Shady Belle (along the shore)",
+        "Lagras"
+    ],
+    "loot": [
+        "Cormorant Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Cormorant Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "c27319e7-d691-4b93-bf64-5d65e4a2b28a",
+    "name": "Cougar",
+    "description": "The cougar, which is also commonly referred to as a puma or mountain lion, is the second largest cat in North America. Unlike the actual big cats, however, the cougar cannot roar. Instead, the large feline purrs like a domestic cat. They have slender bodies and are difficult to spot due to their low stance and tan color that acts as camouflage, and the fact that they are silent when running or stalking.\n\nThese solitary predators have no natural enemies and sit atop the food chain. However, they occasionally compete with other predators such as bears and wolves for food. Skinning the cougar after killing it will net you Big Game Meat and Cougar Fangs.\n\nCougars are native to the states of New Austin, West Elizabeth and remote forested sections of New Hanover. As carnivores, they prey on deer, elk, moose, and mountain goats. The easiest way to take down a cougar of this size is by either using a Bow with Poison Arrows or a rifle. Their fangs can be used for crafting and their meat can be used as food",
+    "location": [
+        "New Austin",
+        "Big Valley",
+        "Roanoke Ridge"
+    ],
+    "loot": [
+        "Cougar Pelt",
+        "Cougar Fang",
+        "Big Game Meat",
+        "Cougar Carcass"
+    ],
+    "tips": "Due to its speed and ability to kill players very quickly, it is recommended to always keep weapons drawn and the Dead Eye bar filled when hunting cougars.\n\nUse a Rifle or Bow and Poison Arrows to get a Perfect Cougar Pelt.\n\nPerfect Cougar Pelts can be sold to a trapper in order to craft the Cougar Cutaway Coat, Rustic Vest, and Cougar McClelland Saddle.\n\nThe Cougar Fang Trinket can be crafted at a Fence Shop with the Legendary Cougar Fang dropped by the Legendary Cougar.\n\nRaising a weapon skyward and firing when a cougar is audible/nearby can lead to it revealing itself on the minimap and charging towards the player's location, allowing them to discern its location before being ambushed.\n\nCougars seem to be afraid to enter the water: staying in the middle of it can give time to target them accurately.\n\nIf players are going for the achievements/trophies, they can hit cougars in the back of their torsoes with a poisonous throwing knife or a poisonous arrow. This way they can stop their attacks and break down on the ground. Once on the ground the player can study them easily and finish them off with their knife",
+    "trivia": "Like with the Cat and the Wolf, their tapetum lucidum shows a feature that wasn’t in the original Red Dead Redemption.\n\nUnlike the first game, cougars can be albino when encountered in the wild (not only rarely but also the only non-legendary animal to be this way).\n\nThe side-mission 'He's British, of Course' features a cougar painted to resemble a tiger\n\nThe 6th Master Hunter Challenge requires you to kill five cougars with a bow and skin them",
+    "danger": "5"
+},
+{
+    "id": "9da7d6c8-c48f-4312-aa74-697e82ffbf1a",
+    "name": "Cow",
+    "description": "",
+    "location": [
+        "Ranches"
+    ],
+    "loot": [
+        "Cow Hide",
+        "Prime Beef"
+    ],
+    "tips": "Cows only spawn at farms and cannot be found in the wild. However, killing them there will most likely result in a shootout and/or a bounty. Therefore, it is best to first lure the animal away and then make the kill in an isolated location. Regardless of what method is used, killing a cow will cause the player's Honor to drop",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "768981fa-102f-4a01-b607-caa35aebbf7b",
+    "name": "Coyote",
+    "description": "Coyotes can be found across New Austin, West Elizabeth, Lemoyne and New Hanover. Their diet is primarily carnivorous, consuming the meat of rodents as its main food source. Using a Bow and arrows, or a repeater, should be considered when hunting for a clean kill. Their pelt can be sold or used in crafting, and their meat can be consumed, though it is considered stringy",
+    "location": [
+        "Everywhere except Grizzlies West"
+    ],
+    "loot": [
+        "Coyote Pelt",
+        "Stringy Meat",
+        "Coyote Carcass"
+    ],
+    "tips": "Use a rifle for a clean kill. Bolt Action Rifle or Springfield Rifle is best for a clean kill",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "cf3b6288-27f8-4841-b90e-d3863c7ae2ee",
+    "name": "Crab",
+    "description": "Two species of crustacean exist in the game: the Cuban land crab and the red swamp crayfish. Both species yield Crustacean Meat when collected",
+    "location": [
+        "Guarma",
+        "Río Bravo",
+        "Scarlett Meadows",
+        "Bayou Nwa (Red Swamp Crayfish)"
+    ],
+    "loot": [
+        "Crustacean Meat",
+        "Crab Carcass"
+    ],
+    "tips": "",
+    "trivia": "Along with the population of Iguanas, the population of Cuban land crabs on the Flat Iron Lake's large island are assumed to be an accidental introduction from Guarma, since they are found next to an crashed ship; it is assumed that they were stowaways on the ship, and came to the island when it crashed\n\nCrustacean Meat is needed for the last Herbalist Challenge",
+    "danger": "X"
+},
+{
+    "id": "972050a8-3da6-4444-88bb-5eb5b49eeb03",
+    "name": "Crane",
+    "description": "Whooping Crane\n\nWhooping Cranes can be found in the wetlands of Lemoyne and New Hanover. Their omnivorous diet consists of nuts, berries, seeds, and insects, as well as small birds and reptiles. The Varmint Rifle is considered to be the best weapon to take down cranes. Their feathers can be used for crafting and the carcass can be sold to traders.\n\nSandhill Crane\n\nThe Sandhill Crane inhabits the wet and grassy marshland of Lemoyne and New Hanover. As omnivores, their diet includes nuts, berries, insects, small birds and reptiles. The easiest way to take down a crane is by using a Varmint Rifle. The carcass can be sold to traders and their feather can be used for crafting",
+    "location": [
+        "Bayou Nwa"
+    ],
+    "loot": [
+        "Crane Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Crane Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "ea128df6-cc7b-4cf0-bdbe-7efbcea91eb0",
+    "name": "Crow",
+    "description": "",
+    "location": [
+        "Everywhere (more scarce in New Austin)"
+    ],
+    "loot": [
+        "Crow Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Crow Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "99edaf00-ebfd-46a0-b413-495db9bf4882",
+    "name": "Deer",
+    "description": "Whitetail Deer are found in a variety of habitats across the states, but are common to the forests of New Hanover, Lemoyne and West Elizabeth. Their herbivorous diet includes grasses, nuts, fungi, twigs, and fruit. Keeping your distance when hunting deer can increase your chances of a kill as they are easily startled. Long range weapons such as a rifle, or a Bow with Poison Arrows, are considered to be the best when hunting. Deer hide can be used for crafting, and their venison meat can be used for cooking",
+    "location": [
+        "Everywhere except for New Austin"
+    ],
+    "loot": [
+        "Deer Hide",
+        "Mature Venison",
+        "Deer Carcass"
+    ],
+    "tips": "Due to their skittish nature, an effective way to kill deer is sniping them from afar",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "570a50f0-96e6-4784-9ba8-06983bd148e7",
+    "name": "Dog",
+    "description": "Dogs are domestic pets that can be found in towns and settlements across the world. Bounty hunters may use Bloodhounds as lawdogs to pursue the player. Killing dogs is considered Animal Cruelty, regardless of the dog's type or hostility.\n\nKilling dogs almost always results in a loss of honor. The only exception is riding a horse to trample pursuing lawdogs slowly.\n\nIn Red Dead Online, a dog can be purchased from the Wilderness Outfitters accessed through JB Cripps and added to the camp, where it will bark to alert to nearby players",
+    "location": [
+        "Settlements and Homesteads"
+    ],
+    "loot": [
+        ""
+    ],
+    "tips": "",
+    "trivia": "Dogs are the only animal in the game the player has an option to praise, pat, or scold.\n\nAmerican foxhounds, Labradors, Chesapeake Bay retrievers, Siberian huskies, and Australian Shepherds can be purchased in Red Dead Online, while the Treeing walker coonhound is exclusive to PS4",
+    "danger": "X"
+},
+{
+    "id": "b144c306-92a8-4086-b56c-33c0403ac3f2",
+    "name": "Donkey",
+    "description": "Donkeys are smaller and slower than a horse. It is a mountable and hitchable animal, but cannot be saddled or bonded with.\n\nDonkeys can be sold at the Horse Fence",
+    "location": [
+        "Rhodes",
+        "Flatneck Station",
+        "Watson's Cabin"
+    ],
+    "loot": [
+        ""
+    ],
+    "tips": "",
+    "trivia": "Donkeys cannot be stabled.\nHowever, it is possible to hitch a donkey at camp and save it as a temporary unbonded mount.\n\nDonkeys sell for 4 cents at the horse fence.\n\nThe Donkey's health core always displays as a red heart, which normally represents a depleted Health Core",
+    "danger": "X"
+},
+{
+    "id": "8d01c674-df56-4a4f-84b2-b9c01270a0ae",
+    "name": "Duck",
+    "description": "The Duck is a species of animal found in Red Dead Redemption 2. There are 2 subspecies; the Mallard duck & the Pekin duck",
+    "location": [
+        "Everywhere except Grizzlies West and New Austin",
+        "Most prolific in Bayou Nwa"
+    ],
+    "loot": [
+        "Duck Feather",
+        "Flight Feather",
+        "Animal Fat",
+        "Game Meat",
+        "Duck Carcass"
+    ],
+    "tips": "Ducks, along with geese, are one of the quickest ways to obtain animal fat for crafting ammo, because they usualy spawn in large numbers and are easier to kill than bears or boars. Also, the feathers and game acquired alongside when looking for fat can render a good amount of cash and resources for the player\n\nUse Small Game Arrows to hunt a perfect duck",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "94735efc-be7b-4b19-a3f2-d9955caaa5b6",
+    "name": "Eagle",
+    "description": "Bald Eagle\nThe Bald Eagle is native to the mountain habitats of Ambarino and West Elizabeth. As carnivorous opportunistic predators, they prey on small mammals like squirrels, raccoons, rabbits and prairie dogs. The Varmint Rifle is considered to be the best weapon to use when taking down an eagle of this size. Their feathers can be used for crafting.\n\nGolden Eagle\nThe Golden Eagle is native to the mountain habitats of Ambarino and West Elizabeth. The carnivorous predator uses its sharp talons to snatch small mammals, reptiles, birds and fish. The Varmint Rifle is considered to be the best weapon to use when taking down an eagle of this size. Their feathers can be used for crafting",
+    "location": [
+        "Everywhere except Bayou Nwa, Great Plains, Hennigan's Stead"
+    ],
+    "loot": [
+        "Eagle Feather",
+        "Flight Feather",
+        "Eagle Talon",
+        "Gamey Bird Meat",
+        "Eagle Carcass"
+    ],
+    "tips": "Like owls, eagles sometimes spawn resting in fixed spots on the map, so whenever the player finds a spot where they can easily hit the bird, they can pinpoint the location and then just wait for the bird to spawn again. An example of place where an eagle usualy spawn by daytime and can be easily hit is the end of the dock at Swadbass Point",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "7eaa39a7-b904-44fb-b465-ef12baf7b6c5",
+    "name": "Egret",
+    "description": "Reddish Egret\nThe Reddish Egret can be found in the swampland of Bayou Nwa. As carnivores, they prey on fish, insects, frogs and crustaceans. The Varmint Rifle is considered to be the best weapon to use when taking down an egret of this size. Their Feather can be used for crafting, and their carcass can be sold to traders.\n\nLittle Egret\nThe Little Egret's main habitat is the swampland of Bayou Nwa. As carnivores, they prey on fish, crustaceans, frogs and insects. The Varmint Rifle is considered to be the best weapon to use when taking down an egret of this size. The Feather from a Little Egret can be used for crafting, and their carcass can be sold.\n\nSnowy Egret\nThe Snowy Egret is native to swamp and marshland of Lemoyne. As carnivores, they prey on fish, frogs, crustaceans and insects. The Varmint Rifle is considered to be the best weapon to use when taking down an egret of this size. The Feather from a Snowy Egret can be used for crafting, and their carcass can be sold to traders",
+    "location": [
+        "Bayou Nwa (along waterways)"
+    ],
+    "loot": [
+        "Egret Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Egret Carcass"
+    ],
+    "tips": "",
+    "trivia": "Five Feathers for each type of Egret are needed in conjunction with 15 Lady of the Night Orchids for the first part of the side mission 'Duchesses and other Animals'. Other than that, either their Feathers or whole carcasses can be sold to traders",
+    "danger": "X"
+},
+{
+    "id": "7d8b8eea-d71f-498e-8fb1-1f722efacd4b",
+    "name": "Elk",
+    "description": "Rocky Mountain Bull Elk\nThe Rocky Mountain Bull Elk is native to Ambarino and northern New Hanover. Their herbivorous diet includes grasses, leaves, bark and plants. Elk are easily startled, so it is advised to keep as much distance as possible whilst hunting. Long range weapons like a Bow with Improved Arrows, or a long scope rifle, are considered to be the best for hunting. Their skin and antlers can be used for crafting, and their mature venison is a good source of food.\n\nRocky Mountain Cow Elk\nThe Rocky Mountain Cow Elk is native to Ambarino and northern New Hanover. Their herbivorous diet includes grasses, leaves, bark and plants. Elk are easily startled, so it is advised to keep as much distance as possible whilst hunting. Long range weapons like a Bow with Improved Arrows, or a long scope rifle are considered to be the best for hunting. Their skin can be used for crafting, and their mature venison is a good source of food. A Perfect Elk Pelt can be crafted into a pair of Chaps. Yields a pelt and mature venison. Used in crafting and cooking or can be sold. Use a long scope rifle for a clean kill",
+    "location": [
+        "Areas southwest to northeast"
+    ],
+    "loot": [
+        "Elk Pelt",
+        "Elk Antlers",
+        "Mature Venison"
+    ],
+    "tips": "Long range weapons like a Bow with Improved Arrows, or a long scope rifle, are considered to be the best for hunting",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "10141531-09c5-404b-aa5a-9eb3b8283b46",
+    "name": "Fox",
+    "description": "",
+    "location": [
+        "Everywhere except for Gaptooth Ridge"
+    ],
+    "loot": [
+        "Fox Pelt",
+        "Stringy Meat",
+        "Fox Carcass"
+    ],
+    "tips": "Foxes can easily be killed or wounded by using a repeater or a Bow with arrows",
+    "trivia": "Along with the Cat, Cougar, and Wolf, foxes' eyes shine at night. This is called a tapetum lucidum, and is present in many animals in real life to aid them with night vision",
+    "danger": "X"
+},
+{
+    "id": "e916696e-510f-43d5-8da2-e68d57288300",
+    "name": "Gila Monster",
+    "description": "The Gila Monster is a venomous lizard living in New Austin, on the banks and generally north of the San Luis River. Their heads and necks are broad and their eyes are black with round pupils. Their bodies are covered with beaded scales and bright black, pink, yellow and orange patterns. Their wide feet end with long, sharp claws.\n\nAs carnivores, they prey on small mammals, lizards, frogs, birds (and their eggs), and carrion",
+    "location": [
+        "New Austin",
+        "Cholla Springs",
+        "Río Bravo"
+    ],
+    "loot": [
+        "Gila Monster Skin",
+        "Herptile Meat",
+        "Gila Monster Carcass"
+    ],
+    "tips": "The Varmint Rifle is considered to be the best for hunting Gila Monsters.\n\nTheir Herptile meat is edible, and their carcasses can be used for crafting.\n\nThe Legendary Panther Range Gloves and the Gila Monster Gambler's Hat can be crafted at the Trapper Shop using its materials",
+    "trivia": "In real life, gila monsters' bite is venomous; in-game, the animal instead runs away from the player, and is not aggressive.\n\nGila monsters can be found outside the world limits in Mexico, where they do not move or react to the player, making them easy to study and kill",
+    "danger": "X"
+},
+{
+    "id": "ccd96ae0-afb3-4005-bc86-8713f48d791b",
+    "name": "Goat",
+    "description": "Domestic Alpine Goats can be found at ranches and farms across the states. Their herbivore diet means that they graze on grasses, weeds, herbs and trees. A Bow with arrows, or a repeater, are the best weapons for a clean kill. Goat hide can be used for crafting, and the gristly meat can be consumed",
+    "location": [
+        "Guarma",
+        "Bayou Nwa",
+        "Painted Sky",
+        "Rathskeller Fork",
+        "Butcher Creek",
+        "Osman Grove",
+        "Van Horn",
+        "Emerald Ranch",
+        "Larned Sod"
+    ],
+    "loot": [
+        "Goat Hide",
+        "Gristly Mutton",
+        "Goat Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "fddd80b1-4803-43b3-8baf-0c6607af55cf",
+    "name": "Goose",
+    "description": "The Canada Goose inhabits grasslands of New Hanover and Lemoyne. They are primarily herbivores, grazing on grasses and grains, but they will also eat small fishes and insects. The Varmint Rifle is considered the be the best for hunting geese of this size. Their plump meat is a good source of food, and their feathers can be used for crafting",
+    "location": [
+        "Emerald Ranch",
+        "Dakota River (mouth)",
+        "New Hanover, West Elizabeth (randomly found flying)"
+    ],
+    "loot": [
+        "Goose Feather",
+        "Flight Feather",
+        "Animal Fat",
+        "Plump Bird Meat",
+        "Goose Carcass"
+    ],
+    "tips": "The Varmint Rifle is the best weapon for killing geese, due to their small size.\n\nGeese, along with ducks, are one of the quickest ways to obtain animal fat for crafting ammo, because they usualy spawn in large numbers and are easier to kill than bears or boars. Also, the feathers and game acquired alongside when looking for fat can render a good amount of cash and resources for the player",
+    "trivia": "The Canada goose is the only species of goose found in Red Dead Redemption 2.",
+    "danger": "X"
+},
+{
+    "id": "e1e4dd77-ea96-4028-91dc-b54586c04663",
+    "name": "Grizzly Bear",
+    "description": "Grizzly Bears are endemic to Grizzlies East. As an omnivore, its diet ranges from berries, roots, and grasses to deer, elk, fish, and carrion. The easiest way to take down an animal of this size is with a rifle with either High Velocity or Express Bullets. Bear meat, fat and claws can be used for food or materials to craft with.",
+    "location": [
+        "Aurora Basin",
+        "Little Creek River",
+        "Whinyard Strait",
+        "O'Creagh's Run"
+    ],
+    "loot": [
+        "Bear Pelt",
+        "Animal Fat",
+        "Bear Claw",
+        "Big Game Meat"
+    ],
+    "tips": "The easiest way to take down an animal of this size is with a rifle with either High Velocity or Express Bullets.\n\nBear meat, fat and claws can be used for food or materials to craft with. These can also be sold to the Trapper or any butcher.\n\nYou can cook the Big Game meal from hunting it.\n\nAt the trapper with the perfect pelt of a grizzly bear you can craft a Bear Dakota Saddle and a Bear Batwing Chaps.\n\nIf the grizzly charges you while on foot, one option is to simply stand still and not move or shoot. The bear will mock-charge, stop short to roar at you, and eventually lose interest. This is actually similar to how most survival experts recommend avoiding a black bear attack but not a Grizzly",
+    "trivia": "The Rank 5 Master Hunter Challenge requires the player to skin three black or grizzly bears.\n\nThe Rank 10 Weapons Expert Challenge requires killing a grizzly bear with only throwing knives",
+    "danger": "5"
+},
+{
+    "id": "3b806187-ffec-4139-8d68-e37171df1af6",
+    "name": "Hawk",
+    "description": "Ferruginous hawk\nFerruginous Hawks can be found across the states. As carnivores, they prey on small mammals like rabbits, ground squirrels, prairie dogs, lizards, and birds. The Varmint Rifle is considered to be the best weapon for a clean kill. The feathers of the hawks can be used for crafting.\n\nRed-tailed hawk\nThe Red-tailed Hawks are native to the open fields and deserts of New Austin, West Elizabeth and New Hanover. As omnivores, their diet consists of small mammals, reptiles, fish, birds, and fresh carrion. The Varmint Rifle is considered to be the best for hunting hawks and other birds of this size. The feathers of the hawks can be used for crafting.\n\nRough-legged hawk\nRough-legged Hawks can be found in open areas and alongside cliffs across the states. As carnivores, they prey on small mammals, and carrion becomes their main diet during the winter seasons. The easiest way to take out a bird of this size is using a Varmint Rifle. The feathers of the hawks can be used for crafting",
+    "location": [
+        "Everywhere, more populous around Armadillo"
+    ],
+    "loot": [
+        "Hawk Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Hawk Carcass"
+    ],
+    "tips": "The best weapon for killing hawks is the Varmint Rifle",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "8a985857-404d-4752-9c63-3ab7cf9b7f2d",
+    "name": "Heron",
+    "description": "Great Blue Heron\nThe great blue heron inhabits the wet and grassy marshlands of Lemoyne. Their carnivorous diet consists of small fish, crustaceans, amphibians, and small birds. The Varmint Rifle is considered to be the best weapon to wound or kill a heron. Herons Feather can be used for crafting and their meat can be used for cooking.\n\nTricolored Heron\nTricolored herons can be found in the wet and grassy marshlands of Lemoyne. As carnivores, they prey on fish, insects, amphibians, and crustaceans. The Lancaster Varmint Rifle is considered to be the best weapon for a clean kill. Heron Feathers can be used for crafting and their meat can be used for cooking",
+    "location": [
+        "Bayou Nwa"
+    ],
+    "loot": [
+        "Heron Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Heron Carcass"
+    ],
+    "tips": "",
+    "trivia": "Twenty Heron Feathers are needed for Duchesses and other Animals",
+    "danger": "X"
+},
+{
+    "id": "4ca46263-0f22-4a06-9566-9ecf596ec68d",
+    "name": "Iguana",
+    "description": "",
+    "location": [
+        "Guarma",
+        "New Austin",
+        "Flat Iron Lake (islands)"
+    ],
+    "loot": [
+        "Iguana Skin",
+        "Herptile Meat",
+        "Iguana Carcass"
+    ],
+    "tips": "Use a Varmint Rifle for a clean kill",
+    "trivia": "Along with the population of Cuban land crabs, the population of iguanas on the Flat Iron Lake's large island are assumed to be an accidental introduction from Guarma, since they are found next to an crashed ship; it is assumed that they were stowaways on the ship, and came to the island when it crashed",
+    "danger": "X"
+},
+{
+    "id": "cef9cda7-c772-40f4-9e76-400a718ed91a",
+    "name": "Loon",
+    "description": "Common Loon\nCommon loons are native to the calm and quiet wetlands of West Elizabeth, Ambarino and New Hanover. Their carnivorous diet includes crustaceans, amphibians, salamanders, frogs, leeches, and snails. The best way to kill or wound a Common Loon is with a Bow with Small Game Arrows. The gamey meat of loons can be used for food, and their feathers can be used for crafting.\n\nPacific Loon\nThe Pacific loon is native to the remote lakes and ponds of West Elizabeth, Ambarino and New Hanover. As carnivores, their diet includes small fish and aquatic insects, as well as some plant matter during breeding seasons. These small birds can be easily killed with a Bow and Small Game Arrows. The gamey meat of loons can be used for food, and their feathers can be used for crafting.\n\nYellow-billed Loon\nYellow-billed loons can be found in the wetlands of West Elizabeth and Ambarino. As carnivores, they prey on small to medium fish, as well as aquatic insects. A Bow with Small Game Arrows is the most effective way to wound or kill these small birds. The gamey meat of loons can be used for food, and their feathers can be used for crafting",
+    "location": [
+        "Flat Iron Lake",
+        "Owanjila",
+        "Upper Montana River"
+    ],
+    "loot": [
+        "Loon Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Loon Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "1ceb7446-a1c7-452d-b2cb-d61ab6c5f0ae",
+    "name": "Moose",
+    "description": "Western Bull Moose\nThe Western Bull Moose is native to the state of West Elizabeth. Their omnivorous diet includes shoots from willow and birch trees, aquatic plants and forbs. These large animals can be taken down with either a Bow with Improved arrows, or with a long scoped rifle. The pelt and antlers from a moose can be used for crafting.\n\nWestern Moose\nThe Western Moose can be found in the remote forested areas of West Elizabeth, Ambarino and New Hanover. Their omnivorous diet includes shoots from willow and birch trees, aquatic plants and forbs. The most effective way to hunt these large mammals is either with a bow with Improved Arrows, or with a long scope rifle. The pelt from a moose can be used for crafting",
+    "location": [
+        "Aurora Basin",
+        "Cairn Lake",
+        "Strawberry (southwest)",
+        "Wapiti Indian Reservation (east)",
+        "Willard's Rest"
+    ],
+    "loot": [
+        "Moose Pelt",
+        "Moose Antler",
+        "Mature Venison"
+    ],
+    "tips": "",
+    "trivia": "The Compendium image for the Western Moose incorrectly shows a female Rocky Mountain elk as opposed to a female moose",
+    "danger": "X"
+},
+{
+    "id": "1de6f390-e225-4fc9-92c9-ba90efdf8377",
+    "name": "Muskrat",
+    "description": "The Muskrat is a medium-sized semiaquatic rodent native to North America and an introduced species in parts of Europe, Asia, and South America. The muskrat is found in wetlands over a wide range of climates and habitats. It has important effects on the ecology of wetlands, and is a resource of food and fur for humans.\n\n American Muskrat's main habitat is along the rivers and shores of New Austin, West Elizabeth, Lemoyne and New Hanover. As omnivores, their diet consists of aquatic vegetation, small fish, and amphibians. The Varmint Rifle is the most effective way of hunting these rodents. Muskrat skin and scent glands can be used for crafting, and their stringy meat can be used for cooking.",
+    "location": [
+        "Most Waterways"
+    ],
+    "loot": [
+        "Muskrat Pelt",
+        "Stringy Meat",
+        "Scent Glands",
+        "Muskrat Carcass"
+    ],
+    "tips": "The Varmint Rifle is the most effective weapon for hunting these animals.\n\nMuskrats may bite the player if they are on foot. However, the attack only has the effect of stunning the player for a few seconds and the attacking animal will flee afterwards.\n\nMuskrats naturally feed and are active all times of the day but are most active at night",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "fb5e5486-48d4-4b12-aa4e-8ef8d235cea0",
+    "name": "Opossum",
+    "description": "The Opossum is a moderate sized mammal. Their coats are a dull grayish brown, other than on their faces, which are white. Opossums have long, hairless, prehensile tails, which can be used to grab branches and carry small objects. They also have hairless ears and a long, flat nose. Opossums have 50 teeth, more than any other North American land mammal, and opposable, clawless thumbs on their rear limbs.\n\nThe Virginia opossum is noted for reacting to threats by feigning death. This is the genesis of the term 'playing possum', which means pretending to be dead or injured with intent to deceive. In the case of the opossum, the reaction seems to be involuntary, and to be triggered by extreme fear. It should not be taken as an indication of docility. It lies on its side, mouth and eyes open, tongue hanging out, emitting a green fluid from its anus whose putrid odor repels predators.\n\nOpossums are omnivorous and eat a wide range of plants and animals such as fruits, grains, insects, snails, earthworms, carrion, snakes, birds, mice, and other small animals",
+    "location": [
+        "Big Valley",
+        "Wapiti Indian Reservation (south)"
+    ],
+    "loot": [
+        "Opossum Pelt",
+        "Stringy Meat",
+        "Opossum Carcass"
+    ],
+    "tips": "The Varmint Rifle is the most effective weapon for hunting these mammals.\n\nOpossums are nocturnal; the player is more likely to find one in the night and early morning.\n\nOpossum meat is stringy but edible, and their skin can be used for crafting.\n\nAt the trapper, 4 perfect opossum pelts are needed to craft the Pronghorn Flop Hat.\n\nOpossums are extremely easy to hunt, as when they play dead they will not attempt to flee the player unless they try to pick it up.\n\nIt should also be noted that when using auto-aim, the player will sometimes not be able to automatically aim at it while it is playing dead, as Arthur doesn't realize it's still alive",
+    "trivia": "Rank 9 of the Master Hunter Challenges requires the player to kill an opossum that's playing dead",
+    "danger": "X"
+},
+{
+    "id": "acb77417-3c9f-49aa-b302-de19aa1aa7f1",
+    "name": "Oriole",
+    "description": "Baltimore Oriole\nThe Baltimore Oriole can be found in Roanoke Ridge. Their omnivorous diet includes fruit, nectar from flowers, and insects. The best way to kill or wound an oriole is with a Bow with Small Game Arrows. Oriole carcasses can be sold to traders.\n\nHooded Oriole\nThe Hooded Oriole's main habitat is West Elizabeth. As an omnivore, their diet consists of leaf insects, fruit and nectar from flowers. A Bow with Small Game Arrows is considered to be the most effective way to kill or wound these small birds. Oriole carcasses can be sold to traders",
+    "location": [
+        "Big Valley",
+        "Lone Mule Stead"
+    ],
+    "loot": [
+        "Oriole Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Oriole Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "29788d01-4000-482b-98a0-b4d88f41d92d",
+    "name": "Owl",
+    "description": "",
+    "location": [
+        "Aurora Basin",
+        "Northern and Central areas"
+    ],
+    "loot": [
+        "Owl Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Owl Carcass"
+    ],
+    "tips": "Like eagles, owls sometimes spawn resting in fixed spots on the map, so whenever the player finds a spot where they can easily hit the bird, they can pinpoint the location and then just wait for the bird to spawn again. Owls can be easily found resting on the rooftop of isolated houses and shacks by nightime, like Tanner's Reach, Catfish Jacksons and the Veteran's Homestead\n\nAlso, there is a day spawn location at the 'Z' in West Elizabeth\n\nOwls only spawn at night",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "35ba54ac-fc03-4711-9fc7-3781e1afc182",
+    "name": "Ox",
+    "description": "The Angus Ox and Devon Ox are domesticated animals. They can be found in ranches. Often, they are kept in the ranch's cattle yard alongside cows. Occasionally, a rancher can be found leading an ox on pastures near a ranch. Both the Angus Ox and Devon Ox have their bull variants.\n\nOxen can become aggressive towards the player if they step into their cattle yard or bump into them. They will charge into the player if turned aggressive. Killing oxen do not result in a loss of honor.\n\nHowever, as oxen are domesticated animals, killing them is considered Animal Cruelty, and witnesses can report the crime to local lawmen. Killing oxen will also result in ranchers immediately turning hostile towards the player.",
+    "location": [
+        "Braithwaite Manor",
+        "Caliga Hall",
+        "Emerald Ranch",
+        "Guthrie Farm"
+    ],
+    "loot": [
+        "Ox Hide",
+        "Ox Horn",
+        "Prime Beef"
+    ],
+    "tips": " rifle or a bow with improved arrows can be used to obtain a clean kill. A rifle shot or an improved arrow shot at the ox's head will kill the ox without damaging its pelt or carcass.\n\nAnother efficient way to kill an ox is to use the lasso. The player can restrain the ox, close in and kill it with a knife.\n\nPlayers should note that skinning an ox takes more time, similar to any other large animals. During skinning, a nearby rancher or a civilian may come and investigate. If the player is spotted skinning the ox, the rancher or civilian may turn hostile towards the player or report the crime to lawmen.\nTo avoid this issue, the player can first lure the ox to a secluded area before killing and skinning it. The player can do this by bumping into the ox, then opening the cattle yard's gate to let it escape.\nOtherwise, the player can kill an ox silently in its cattle yard at night, when ranchers and civilians are not present. The player can use a lasso and a knife, or a bow, to kill the ox silently.\nRobard Farm presents the best opportunity to kill an oxen without being noticed, as the occupants are deceased",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "ef50ec8a-b807-4bc5-a8af-da16ab84e32a",
+    "name": "Panther",
+    "description": "Panthers only spawn in certain areas. They will often attack the player's horse first. They are efficient killers, and the player has little time to react once they appear",
+    "location": [
+        "Lagras (east)",
+        "Scarlett Meadows (south)"
+    ],
+    "loot": [
+        "Panther Pelt",
+        "Panther Eye",
+        "Big Game Meat",
+        "Panther Carcass"
+    ],
+    "tips": "Like the cougar, the panther is very aggressive and will attack players on sight. It may quickly charge towards players or wait in the bushes for an ambush. As a result, players should be extra careful when travelling into areas where panthers are most commonly found.\nThe Eagle Eye is extremely useful in this situation, as panthers in the forest are relatively difficult to detect.\nAvoid letting a panther come too close as it is a very agile predator which can swiftly kill players at close range.\n\nThe safest method to hunt panthers is by killing it from a distance. For example, placing predator bait in an open area to lure a panther out and then shooting it with a scoped rifle.\nAlternatively, players might choose a bolder method by using themselves as bait. To do this, players must keep their weapon (bow or rifle) drawn, then ride their horse into the hunting area. Once a panther is spotted, it is crucial that you shoot it as quickly as possible.\n\nIf farming a pristine panther for the Kit Satchel, Achievements or Trophies:\nOld Harry Fen is far more likely than East of Lagras to actually have panthers (either regular or Florida), but even so, will only have one around for the player to fight each time they arrive to the region, and a new one will not spawn until the player reenters from very far away or uses the save-quit-reload strategy.\nKilling the panther cleanly for a high-quality pelt requires a rifle with e.g. an express cartridge or split point cartridge, or an improved arrow, but care must be taken not to damage the pelt, so a headshot is required. Explosive ammunition will reduce the quality to 1-star.\nPanthers tend to spawn between 10.30pm and 11.30pm.\nIf players are going for the achievements/trophies, they can hit panthers in the back of their torsos with a poisonous throwing knife or a poisonous arrow. This way they can stop their attacks and break down on the ground. Once on the ground the player can study them easily and finish them off with their knife",
+    "trivia": "A Cat Skull Mask can be found in Lakay to the southwest of its spawn area.\n\nThe species of the Panther seems dubious at first glance; it acts like and is the same size as a Cougar, but it has rosettes reminiscent of a jaguar or leopard. It also roars (as opposed to growling like a cougar), while cougars can only hiss and meow in real life. The Compendium photo for the Panther in-game is a melanistic jaguar, further adding to the confusion.\nTo add to the confusion even further, the Legendary variant of the Panther is called Giaguaro.\n\nThe Kit Satchel upgrade requires a perfect panther pelt.\n\nThe Panther Trail saddle (crafted from a single panther pelt at a Trapper) is arguably the best saddle in the game when it comes to speed/stamina, as it gives the following bonuses:\n-20% HP core drain\n-26% Stamina core drain\n-50% Stamina drain\n+24% stamina regeneration rate\n+2 to both top speed and acceleration",
+    "danger": "5"
+},
+{
+    "id": "ba98d6f8-4c20-4165-9a08-c1fbd09249f5",
+    "name": "Parakeet",
+    "description": "Their herbivorous diet consists of shrubs, seeds and fruit from forest trees. A Bow and Small Game Arrows can take down these small birds. Their carcasses can be sold to traders.",
+    "location": [
+        "Bayou Nwa"
+    ],
+    "loot": [
+        "Parakeet Feather",
+        "Flight Feather",
+        "Exotic Bird Meat",
+        "Parakeet Carcass"
+    ],
+    "tips": "The Parakeet is a relatively small bird, which is hard to spot through the grass around the swamps and it can easily fly away. It's is best to use Binoculars and keep a fair distance before approaching the areas where it spawns.\n\nThe best way to kill the Parakeet is by using the Varmint Rifle, along the use of Dead Eye Targeting.",
+    "trivia": "The Carolina parakeet had become rare by the middle of the 19th century. The last confirmed sighting was in 1910. In the year of 1939, the species was declared as extinct.\n\nThe Parakeet Extinction mission closes after 25 are killed and the bird no longer appears.\n\nIf the player only kills 24 of the parakeets, only 1 of them will spawn the next time the bird is encountered\n\nKilling the first parakeet will cause an Honor penalty, while a quest with the description 'The Carolina Parakeet is an endangered species' will appear in the mission log.\n\nAfter the player killed 15 parakeets, the text changes into 'The Carolina Parakeet population is dwindling and is facing extinction.' The population of birds will be smaller and they spawn more rarely. After the player killed 25 parakeets, the mission is completed and the text changes into 'The Carolina Parakeet species has been wiped from the face of the Earth'. A drawing of a parakeet will appear in the player's journal",
+    "danger": "X"
+},
+{
+    "id": "48188082-7675-489c-9a63-c96ddb2263ae",
+    "name": "Parrot",
+    "description": "They are brightly colored birds that live in tropical areas. There are three species found in the game: the blue-and-yellow macaw, the scarlet macaw, and the great green macaw",
+    "location": [
+        "Guarma"
+    ],
+    "loot": [
+        "Parrot Feather",
+        "Flight Feather",
+        "Exotic Bird Meat",
+        "Parrot Carcass"
+    ],
+    "tips": " the player wants to kill parrots, they should wait until they are on the ground or on a rock, as to kill them in flight might require Dead Eye",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "e310d693-4ee7-40a1-a5d4-944f75438ce5",
+    "name": "Peccary",
+    "description": "The Collared Peccary are native to New Austin. Their herbivorous diet consists of agave, prickly pear cacti, mesquite beans, fruits, nuts, and roots. A Repeater or a Bow with arrows are considered to be the most effective weapons to use when hunting wild pigs. Their carcasses can be sold to traders and their meat can be cooked",
+    "location": [
+        "Cholla Springs, Gaptooth Ridge"
+    ],
+    "loot": [
+        "Peccary Skin",
+        "Animal Fat",
+        "Tender Pork Loin"
+    ],
+    "tips": "As with most medium-sized game, a repeater (or bow with normal arrows) headshot is recommended",
+    "trivia": "The Rattler outfit requires two Perfect Collared Peccary pelts to be complete; therefore, this outfit can only be acquired after the game epilogue, as the Peccary can only be found in New Austin",
+    "danger": "X"
+},
+{
+    "id": "0470129f-f4f0-45ea-92eb-ce36b7c0d51a",
+    "name": "Pelican",
+    "description": "",
+    "location": [
+        "Eastern Shores of the map"
+    ],
+    "loot": [
+        "Pelican Feather",
+        "Flight Feather",
+        "Exotic Bird Meat",
+        "Pelican Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "ae882a68-79ca-4618-8edf-65097962f7da",
+    "name": "Pheasant",
+    "description": "Pheasants are somewhat large, colorful birds. They forage on the ground until disturbed by the player, in which they will fly away a short distance above the ground while vocalizing, similar to Turkeys",
+    "location": [
+        "Carmody Dell",
+        "Valentine"
+    ],
+    "loot": [
+        "Pheasant Feather",
+        "Flight Feather",
+        "Animal Fat",
+        "Game Meat",
+        "Pheasant Carcass"
+    ],
+    "tips": "Like with Turkeys, the Varmint Rifle is considered the best weapon to kill Pheasants",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "501920ec-b451-4fe6-9fcb-504fcd8bbc4e",
+    "name": "Pig",
+    "description": "",
+    "location": [
+        "Saint-Denis",
+        "Guarma"
+    ],
+    "loot": [
+        "Pig Hide",
+        "Tender Pork Loin",
+        "Pig Carcass"
+    ],
+    "tips": "Like other domesticated animals, any attacks on pigs will usually be responded with a hostility from surrounding people. Therefore, the best way to hunt them is herding pigs into the isolated place before killing them. Alternatively, players may choose some remote ranches with few occupants. So, they can silence occupants and kill pigs without problems",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "dc9dd64b-4338-48cb-a13c-a835516dda62",
+    "name": "Pigeon",
+    "description": "",
+    "location": [
+        "Bard's Crossing",
+        "Annesburg",
+        "Saint-Denis"
+    ],
+    "loot": [
+        "Pigeon Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Pigeon Carcass"
+    ],
+    "tips": "Two or three Band-Tailed Pigeons can usually be found behind an abandoned building beside the railway tracks near the Legendary Lake Sturgeon in Bayou Nwa",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "7c9df69b-5827-405c-a0ea-f226c7faf7c2",
+    "name": "Pronghorn",
+    "description": "",
+    "location": [
+        "West and Southwest"
+    ],
+    "loot": [
+        "Pronghorn Pelt",
+        "Mature Venison",
+        "Pronghorn Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "c47e4056-c2fb-42c6-ad57-a2ccef796fd3",
+    "name": "Quail",
+    "description": "Quail are small, agile birds which are mostly terrestrial, but can fly when spooked, similar to turkeys. They make slight coo sounds when they have not noticed the player",
+    "location": [
+        "Strawberry",
+        "West Elizabeth"
+    ],
+    "loot": [
+        "Quail Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Quail Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "0188c94d-7bd1-4233-804b-8febfabf3e5e",
+    "name": "Rabbit",
+    "description": "The black-tailed jackrabbit can be found in a variety of habitats across the states. As herbivores, their diet consists of vegetation forbs, buds, twigs, bark, and crops, which is why they are considered pests. A Varmint Rifle is the ideal weapon to use when hunting rabbits. Rabbit pelts can be used for crafting, and their gamey meat can be used for cooking",
+    "location": [
+        "Everywhere"
+    ],
+    "loot": [
+        "Rabbit Pelt",
+        "Game Meat"
+    ],
+    "tips": "One bullet from any weapon kills a rabbit due to its small size; however, steadying a shot is the difficult part, as they don't tend to stand still.\n\nRabbits also run away from a speeding horse or someone who is running. It is recommended to walk slowly or crouch while searching for them.\n\nAs small animals, rabbits are easily obliterated; even shotguns have to be used at medium range to leave a carcass, and most rifles will destroy a rabbit at any range.\n\nThe best weapons to hunt rabbits are the revolvers/pistols or Throwing Knife.\n\nThe Varmint Rifle is the ideal weapon to kill a rabbit with, since it can kill it in one shot, and will not spoil the pelt",
+    "trivia": "The Jackalope is the same as a rabbit, except it has Buck antlers, and its running animation's speed is increased\n\nThree Perfect quality Rabbit pelts must be acquired to complete Rank 2 of the Master Hunter Challenges",
+    "danger": "X"
+},
+{
+    "id": "047fa2ee-a1bb-46cc-8767-121ef9d1346c",
+    "name": "Raccoon",
+    "description": "It's a Moderately sized Mammal animal. As omnivores, their diet includes plants, berries, amphibians, rodents, and eggs, depending on their environment.\n\nThe most characteristic physical feature of the raccoon is the area of black fur around the eyes, which contrasts sharply with the surrounding white face coloring. This is reminiscent of a 'bandit's mask' and has thus enhanced the animal's reputation for mischief.\n\nThe slightly rounded ears are also bordered by white fur. Raccoons are assumed to recognize the facial expression and posture of other members of their species more quickly because of the conspicuous facial coloration and the alternating light and dark rings on the tail.\n\nThe dark mask may also reduce glare and thus enhance night vision. On other parts of the body, the long and stiff guard hairs, which shed moisture, are usually colored in shades of gray and, to a lesser extent, brown",
+    "location": [
+        "Everywhere except Río Bravo, Gaptooth Ridge, and rarely in Grizzlies West"
+    ],
+    "loot": [
+        "Raccoon Pelt",
+        "Stringy Meat",
+        "Raccoon Carcass"
+    ],
+    "tips": "The Varmint Rifle is the most effective weapon for hunting raccoons\n\nTheir meat is edible but stringy, and their skin can be used for crafting. Yields pelt and stringy meat.\n\nUsed in crafting and cooking or can be sold.\n\nAt the Trapper, you can craft a Raccoon Mountain Hat",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "63bff43d-6e7b-4a29-bd54-a9eaecc6363d",
+    "name": "Ram",
+    "description": "Desert Bighorns, Rocky Mountain Bighorns, and Sierra Nevada Bighorns are wild animals. The Desert Bighorns can only be encountered in the desert areas of New Austin and West Elizabeth. The Rocky Mountain Bighorns can only be found in the Grizzlies. The Sierra Nevada Bighorns, however, can be found in both snowy and desert regions",
+    "location": [
+        "Mountainous Areas"
+    ],
+    "loot": [
+        "Ram Hide",
+        "Ram Horn",
+        "Gristly Mutton",
+        "Ram Carcass"
+    ],
+    "tips": "The best way to hunt these animals is by using a rifle or poisoned arrows",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "aaef4358-832f-486d-a72b-4e32ab0f0a0d",
+    "name": "Rat",
+    "description": "",
+    "location": [
+        "Almost everywhere, highest in east"
+    ],
+    "loot": [
+        "Rat Pelt",
+        "Stringy Meat",
+        "Rat Carcass"
+    ],
+    "tips": "A Perfect Rat is needed for the second request from the Wildlife Art Exhibition.\n\nTen Perfect Rats are needed to make the Rat Flat Cap at the Trapper.\n\nUse a Bow with Small Game Arrows for a clean kill.",
+    "trivia": "There are two random encounters in Doyle's Tavern in Saint Denis where Doyle will ask you to clear his bar of rats. If done correctly, this will give you the required amount of rat pelts the trapper needs for all items.\n\nDuring 'American Venom', a rat can be seen exiting Micah's cabin when John is approaching.\n\nIf the player kills rats in towns, they will get a positive honor for it.",
+    "danger": "X"
+},
+{
+    "id": "3d30c8e1-a8e6-414c-9b16-044ef79769b1",
+    "name": "Raven",
+    "description": "The Western Raven can be found in a variety of habitats across the states. As omnivores, their diet consists of grains and seeds, but they prefer to scavenge for carrion and eggs of other nesting birds. A Bow with Small Game Arrows can be used to kill or wound a bird of this size. Raven feathers can be used for crafting, and their meat can be used for cooking",
+    "location": [
+        "Tanner's Reach",
+        "Eris Field"
+    ],
+    "loot": [
+        "Raven Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Raven Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "5d466c49-ffb6-4afe-aede-01bc8e8332a0",
+    "name": "Robin",
+    "description": "The American Robin is native to a wide range of habitats across the states. Their omnivorous diet consists of insects, grubs, berries and fruit. It's considered that the most effective way to hunt these small birds is with a Bow and Small Game Arrows. Their plump meat is a good source of food and their feathers can be used for crafting",
+    "location": [
+        "Everywhere except for Grizzlies West and New Austin"
+    ],
+    "loot": [
+        "Robin Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Robin Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "9c02df53-3262-42f2-bc71-fd20ece5dc5d",
+    "name": "Rooster",
+    "description": "Dominique rooster\nThe Dominique Rooster can be found on ranches across Lemoyne, New Hanover, West Elizabeth and New Austin. As omnivores, they usually forage the ground for insects and vegetation. A Bow with Small Game Arrows is considered the most effective weapon for hunting roosters. Their feathers can be used for crafting and their meat is a good source of food.\n\nJava rooster\nJava Roosters can be found on ranches across Lemoyne, New Hanover, West Elizabeth and New Austin. As omnivores, they forage the ground for insects and vegetation. It's considered that the best way to kill a rooster whilst hunting is with a Bow and Small Game Arrows, as it does the least amount of damage to the meat. Their plump meat is a good source of food, and their feathers can be used for crafting.\n\nLeghorn rooster\nThe Leghorn Rooster can be found on ranches across Lemoyne, New Hanover, West Elizabeth and New Austin. As omnivores, they usually forage the ground for insects and vegetation. A Bow with Small Game Arrows is considered the most effective weapon for hunting chickens. Their feathers can be used for crafting and their meat is a good source of food",
+    "location": [
+        "Guarma",
+        "Select Ranches"
+    ],
+    "loot": [
+        "Rooster Feather",
+        "Plump Bird Meat",
+        "Rooster Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "59122ba8-be38-4d46-91c0-722b2d0dc3a5",
+    "name": "Seagull",
+    "description": "As omnivores, their main diet consists of bird eggs, insects, squid, crustaceans, fish and grain or garbage.\n\nA Bow with Small Game Arrows is considered to be the best weapon to wound or kill a seagull. Their gamey meat is a good source of food, and their feathers can be used for crafting.",
+    "location": [
+        "Guarma",
+        "Saint-Denis",
+        "Flat Iron Lake",
+        "Van Horn"
+    ],
+    "loot": [
+        "Seagull Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Seagull Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "a43a9d12-b080-49c4-8f9c-b04c305caf94",
+    "name": "Sheep",
+    "description": "Merino Sheep are domesticated animals. They can be encountered in ranches. Valentine is famous for being a sheep-auctioning town, and Merino Sheep can be seen in large numbers in the town's sheep-pens. Occasionally, a shepherd can be encountered outside Horseshoe Overlook, herding Merino Sheep with their dog. Players should note that killing Merino Sheep will result in a loss of honor, as they are passive domesticated animals. Killing Merino Sheep in ranches and towns will turn nearby ranchers and civilians hostile, and witnesses can report the killing as Animal Cruelty to local lawmen. Skinning Merino Sheep will yield Sheep Hides and Gristly Mutton.\n\nA unique black Merino Sheep with a pink ribbon can be encountered at Heartland Overflow.[1] The sheep can be seen travelling alone. Killing the sheep will result in a loss of honor. The player cannot skin the sheep, but they can loot a golden wedding ring from it. The same sheep can be found dead in a pen in Guthrie Farm, next to a half-naked human corpse",
+    "location": [
+        "Valentine",
+        "Emerald Ranch",
+        "Downes Ranch"
+    ],
+    "loot": [
+        "Sheep Hide",
+        "Gristly Mutton",
+        "Sheep Carcass"
+    ],
+    "tips": "Wild sheep will run away once they spot the player. It is best to hunt them at a long distance.\n\nThe player should use a rifle or a bow with regular arrows to obtain a clean kill. Shooting at the sheep's head or neck will result in a one-shot kill without lowering the pelt's or carcass' quality.\n\nKilling Merino Sheep will often turn nearby civilians and ranchers hostile. Witnesses can report the crime as Animal Cruelty. It is best to hunt Merino Sheep silently at night to avoid hostility or lawmen intervention. The player can lasso the sheep or use a bow to kill the sheep silently.\n\nMerino Sheep never spawn in one-star quality",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "c11d1fd1-8b09-41d3-a2f4-7a4b15fed235",
+    "name": "Skunk",
+    "description": "",
+    "location": [
+        "Everywhere except for Cholla Springs"
+    ],
+    "loot": [
+        "Skunk Pelt",
+        "Scent Glands",
+        "Stringy Meat",
+        "Skunk Carcass"
+    ],
+    "tips": "Skunks will usually spawn at dusk",
+    "trivia": "If the player brings a skunk carcass to camp (or to Beecher's Hope in the Epilogue), gang members will make comments on it.\n\nAs part of the Wildlife Art Exhibition task, 'A Better World, A New Friend', a perfect Skunk carcass is required to be mailed to Ms. L. Hobbs",
+    "danger": "X"
+},
+{
+    "id": "137dfe90-f74e-46fc-bb25-3d3b0e46a3ce",
+    "name": "Snake",
+    "description": "Snakes will attempt to flee from the player, and horses will always be spooked by snakes. Most snakes are venomous and will bite the player if provoked. A Health Cure will remove the venom from the player",
+    "location": [
+        "Everywhere"
+    ],
+    "loot": [
+        "Snake Skin",
+        "Stringy Meat",
+        "Snake Carcass"
+    ],
+    "tips": "The Fer-de-Lance snake is not exclusive to the remote island of Guarma. It can be found on the main map in the Stillwater Creek area just southwest of Thieves Landing. A known spawn point is on the land directly east of the pool of water where you find the Legendary Redfin Pickerel",
+    "trivia": "",
+    "danger": "4"
+},
+{
+    "id": "b5918537-230b-4e7c-ad17-f7e5bd05e702",
+    "name": "Songbird",
+    "description": "",
+    "location": [
+        "Everywhere, rare in New Austin"
+    ],
+    "loot": [
+        "Songbird Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Songbird Carcass"
+    ],
+    "tips": "",
+    "trivia": "Both the golden-crowned sparrow and American tree sparrow have a model of another species, the lark sparrow, which is a species normally found in the 'Wild West'.Eurasian tree sparrow in real life are extremely rare, mostly localized to parts of Missouri and Illinois. The common town species, the house sparrow (Passer domesticus), is not featured in RDR2",
+    "danger": "X"
+},
+{
+    "id": "3e5a6922-92dd-4a85-98c2-fc5a0c119d3d",
+    "name": "Sparrow",
+    "description": "American Tree Sparrow\nThe American Tree Sparrow is native to the grasslands of West Elizabeth and New Hanover. As omnivores, their diet consists of berries, seeds and insects. These small birds can easily be killed by using a Bow with Small Game Arrows. Their feathers can be used for crafting.\n\nEurasian Tree Sparrow\nThe Eurasian Tree Sparrow can be found in the grasslands of West Elizabeth and New Hanover. Their omnivorous diet consists of seeds, grains, and inspects. A Bow with Small Game Arrows is considered to be the best weapon for taking down small birds like sparrows. Their feathers can be used for crafting.\n\nGolden Crowned Sparrow\nGolden Crowned Sparrows can be found in the brushy grasslands of West Elizabeth and New Hanover. As omnivores, their diet consists of insects, grubs, seeds, berries, and flowers. A Bow with Small Game Arrows is considered to be the best weapon for a clean kill. Their feathers can be used for crafting",
+    "location": [
+        "Everywhere, rare in New Austin"
+    ],
+    "loot": [
+        "Sparrow Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Sparrow Carcass"
+    ],
+    "tips": "",
+    "trivia": "Both the golden-crowned sparrow and American tree sparrow have a model of another species, the lark sparrow, which is a species normally found in the 'Wild West'.Eurasian tree sparrow in real life are extremely rare, mostly localized to parts of Missouri and Illinois. The common town species, the house sparrow (Passer domesticus), is not featured in RDR2",
+    "danger": "X"
+},
+{
+    "id": "937df11f-d3cb-4c0d-a324-c7789034a528",
+    "name": "Spoonbill",
+    "description": "The Roseate Spoonbill is native to Bayou Nwa. As omnivores, their main diet consists of algae, crustaceans, insects, and small fish. The Varmint Rifle is considered to be the best weapon to wound or kill a spoonbill. Their colorful feathers can be used for crafting, and their gamey meat can be consumed",
+    "location": [
+        "Bayou Nwa"
+    ],
+    "loot": [
+        "Spoonbill Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Spoonbill Carcass"
+    ],
+    "tips": "Thirty Spoonbill Feathers are needed for Duchesses and other Animals",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "de43f36a-d5b7-49e2-8fe8-d2ddd534bc19",
+    "name": "Squirrel",
+    "description": "",
+    "location": [
+        "Everywhere"
+    ],
+    "loot": [
+        "Squirrel Pelt",
+        "Squirrel Tail",
+        "Stringy Meat",
+        "Squirrel Carcass"
+    ],
+    "tips": "Use a Bow with small game arrows for a clean kill.\n\nSix squirrels are needed to make the Squirrel Flat Cap at the Trapper",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "f6f1a95d-7db6-405c-8277-d95334c9b9c8",
+    "name": "Toad",
+    "description": "",
+    "location": [
+        "Major Waterways"
+    ],
+    "loot": [
+        "Herptile Meat",
+        "Toad Carcass"
+    ],
+    "tips": "",
+    "trivia": "🐸",
+    "danger": "X"
+},
+{
+    "id": "669bdc4d-c4ec-4ddc-8ee9-04924710d942",
+    "name": "Turkey",
+    "description": "The Eastern Wild Turkey can be found in the forested or brushy regions of West Elizabeth, New Hanover and Lemoyne. As opportunistic omnivores, the can be found foraging for insects, seeds and grasses. The easiest way to take down a bird of this size whilst hunting is by using a Varmint Rifle. Their feathers can be used for crafting, and their plump meat can be used as a source of food",
+    "location": [
+        "Northern and Central Regions"
+    ],
+    "loot": [
+        "Turkey Feather",
+        "Plump Bird Meat",
+        "Turkey Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "61409aaf-60c2-4f3c-a8f5-166d272c6e30",
+    "name": "Turtle",
+    "description": "Turtles are small, shelled reptiles found in the marshlands in Lemoyne. They have wet, scaly skin and their most prominent feature is the large, pointed shell on their backs.\n\nTurtles are very easy to catch, taking only one arrow/bullet to kill them",
+    "location": [
+        "Bayou Nwa",
+        "Stillwater Creek",
+        "Flat Iron Lake (islands)"
+    ],
+    "loot": [
+        "Herptile Meat",
+        "Turtle Carcass"
+    ],
+    "tips": "",
+    "trivia": "Green turtles are essentially invisible during normal gameplay at Guarma; they can be studied, but are not seen when the player looks to the ocean at Bahía de la Paz. Through the glitch to return to Guarma, however, green turtles can be physically found, although they cannot be skinned. They are also not added to the Compendium, but Arthur or John will make sketches on their journals",
+    "danger": "X"
+},
+{
+    "id": "0a6984ec-8641-4bb6-994d-08a38e9e9e53",
+    "name": "Vulture",
+    "description": "",
+    "location": [
+        "Armadillo"
+    ],
+    "loot": [
+        "Vulture Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Vulture Carcass"
+    ],
+    "tips": "",
+    "trivia": "",
+    "danger": "X"
+},
+{
+    "id": "f670b623-ab3c-42e4-a505-63b83b5bcbd6",
+    "name": "Waxwing",
+    "description": "The Cedar Waxwing inhabits open and forested areas across the states. Their primary herbivore diet includes berries and sugary fruit all year round, and they will only feed on insects during breeding seasons. A Bow and Small Game Arrows can take down these small birds. Their feathers can be used for crafting",
+    "location": [
+        "Benedict Point",
+        "Riggs and Wallace Station"
+    ],
+    "loot": [
+        "Waxwing Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Waxwing Carcass"
+    ],
+    "tips": "",
+    "trivia": "One perfect Waxwing is needed for the last Wildlife Art Exhibition task",
+    "danger": "X"
+},
+{
+    "id": "3795d510-9778-4a0f-85db-0bdb997a7622",
+    "name": "Wolf",
+    "description": "Wolves are large mammals which prey on ungulates, or large hoofed mammals, like elk, moose, deer and mountain goats, as well as beavers, rabbits and other small prey. Wolves are also scavengers and often eat animals that have died due to other causes. Wolves live, travel and hunt in packs of 3 to 6 animals on average.\n\nCompared to its closest wild cousins (the coyote and foxes), the gray wolf is larger and heavier, with a broader snout, shorter ears, a shorter torso and longer tail. It is a slender, powerfully built animal with a large, deeply descending ribcage, a sloping back and a heavily muscled neck. The wolf's legs are moderately longer than those of other canines, which enables the animal to move swiftly, and allows it to overcome the deep snow that covers most of its geographical range. The ears are relatively small and triangular.\n\nWolves have a complex communication system ranging from barks and whines to growls and howls. While they don't actually howl at the moon, they are more active at dawn and dusk, and they do howl more when it's lighter at night, which occurs more often when the moon is full",
+    "location": [
+        "Aurora Basin",
+        "Hanging Dog Ranch"
+    ],
+    "loot": [
+        "Wolf Pelt",
+        "Wolf Heart",
+        "Big Game Meat",
+        "Wolf Carcass"
+    ],
+    "tips": "Wolves seldom attack humans without a pack of at least 3, and their howl usually warns the player about their incoming charge. Upon losing a majority of their pack, the surviving wolves tend to whimper and flee the player regardless of how close he gets. A lone fleeing wolf can be approached on foot with minimal danger, even if not wounded.\n\nAs a chasing pack, wolves might resort to attacking slower animals rather than the player. Occasionally, wolves can fight bears, either retreating or killing them depending on how the fight goes",
+    "trivia": "Their tapetum lucidum shows at night in Red Dead Redemption 2, unlike the original Red Dead Redemption.\n\nLike other species such as bison, wolves notably faced an existential crisis by the late nineteenth century, as human settlement meant habitat loss, decreased prey availability, and extermination efforts from farmers and ranchers intent on protecting livestock. Gray wolves were almost entirely eradicated from the northern Rocky Mountains by the 1930s and faced extinction by the 1970s, when conservation efforts helped their numbers gradually recover.\n\nA wolf can be seen mourning a fallen companion near The Loft\n\nAs wolves often attack in packs, it is recommended that players use long range weapons like rifles, or a bow with arrows, to wound or kill a wolf.\n\nTheir meat can be used for food, and their pelts and hearts can be used for crafting.\n\nAt the Trapper, the player needs 1 perfect wolf pelt to craft a Wilderness Vest, the Wolf Coat and the Legendary Moose Hunting Jacket",
+    "danger": "5"
+},
+{
+    "id": "9dd693a3-8a3d-4b52-bcfe-81faa5e0e839",
+    "name": "Woodpecker",
+    "description": "Red-Bellied Woodpecker\nThe Red-Bellied Woodpecker can be found in Roanoke Ridge. As omnivores, their diet consist of insects, fruits, nuts and berries. A Bow with Small Game Arrows can be used to take down birds of this size, with minimal damage to their carcass. Their carcass and feathers can be used for crafting.\n\nPileated Woodpecker\nThe Pileated Woodpecker can be found in the woodland areas of New Hanover. As omnivores, their diet consist of insects, fruits, nuts and berries. A Bow with Small Game Arrows is considered to be the best weapon to take down woodpeckers. Their carcass and feathers can be used for crafting",
+    "location": [
+        "Everywhere except for New Austin"
+    ],
+    "loot": [
+        "Woodpecker Feather",
+        "Flight Feather",
+        "Gamey Bird Meat",
+        "Woodpecker Carcass"
+    ],
+    "tips": "The woodpecker is distinct from other birds in that it makes a unique noise that sounds almost like a gatling gun when one is close to it.\n\nA Perfect Woodpecker is needed for the second request from The Wildlife Art Exhibition.",
+    "trivia": "",
+    "danger": "X"
+}]
