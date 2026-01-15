@@ -126,7 +126,7 @@ struct AnimalDetail: View {
         AnimalDetail(
             animal: Animal(
                 id: UUID(),
-                name: "American Alligator (Small)",
+                name: "Alligator",
                 description:
                     "Native to the swamps and bayous of Lemoyne, the American Alligator is a carnivorous apex predator.",
                 location: ["Lemoyne", "Lagras"],

@@ -155,12 +155,17 @@ struct HandbookTabs: View {
                         jsonFile: "animals.json"
                     )
                 }
-                Tab("Pelts", systemImage: "bag.fill", value: 1) {
-                    ListTab(
-                        items: manager.pelts,
-                        name: "Pelts",
-                        jsonFile: "pelts.json"
-                    )
+                // Tab("Pelts", systemImage: "bag.fill", value: 1) {
+                //     ListTab(
+                //         items: manager.pelts,
+                //         name: "Pelts",
+                //         jsonFile: "pelts.json"
+                //     )
+                // }
+                if storeKitManager.hasPremium {
+                    Tab("Checklist", systemImage: "checklist", value: 4) {
+                        ChecklistTab()
+                    }
                 }
                 Tab("Credits", systemImage: "creditcard.fill", value: 2) {
                     CreditsTab()
@@ -193,13 +198,20 @@ struct HandbookTabs: View {
                         jsonFile: "animals.json"
                     )
                 }
-                Tab("Pelts", systemImage: "bag.fill", value: 1) {
-                    SplitViewListTab(
-                        items: manager.pelts,
-                        name: "Pelts",
-                        jsonFile: "pelts.json"
-                    )
+                // Tab("Pelts", systemImage: "bag.fill", value: 1) {
+                //     SplitViewListTab(
+                //         items: manager.pelts,
+                //         name: "Pelts",
+                //         jsonFile: "pelts.json"
+                //     )
+                // }
+                
+                if storeKitManager.hasPremium {
+                    Tab("Checklist", systemImage: "checklist", value: 4) {
+                        ChecklistTab()
+                    }
                 }
+
                 Tab("Credits", systemImage: "creditcard.fill", value: 2) {
                     CreditsTab()
                 }

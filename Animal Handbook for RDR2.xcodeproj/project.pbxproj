@@ -19,6 +19,7 @@
 /* Begin PBXFileReference section */
 		344C8CC02F157ED9002A3BBE /* Wildlife Handbook for RDR2.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Wildlife Handbook for RDR2.storekit"; sourceTree = "<group>"; };
 		344C8D032F16A759002A3BBE /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		344C8D3E2F194E61002A3BBE /* Animal Handbook for RDR2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Animal Handbook for RDR2.entitlements"; sourceTree = "<group>"; };
 		34D6A9C52EE380A3008F3D9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		34D6A9C72EE380A3008F3D9A /* animals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
 		34D6A9C82EE380A3008F3D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 				"Detail Views/PeltDetail/PeltDetail.swift",
 				"Detail Views/PeltDetail/TrapperItemsSection.swift",
 				Functions/Animal.swift,
+				Functions/ChecklistManager.swift,
 				Functions/DataManager.swift,
 				Functions/FlexibleHeader.swift,
 				Functions/GlassEffectModifier.swift,
@@ -56,6 +58,7 @@
 				Functions/StoreKitManager.swift,
 				HandbookApp.swift,
 				HandbookTabs.swift,
+				Tabs/ChecklistTab.swift,
 				Tabs/CreditsTab.swift,
 				Tabs/ListTab.swift,
 				Tabs/MacHandbookLayout.swift,
@@ -104,6 +107,7 @@
 		B9C534CA2963AAC80091883A = {
 			isa = PBXGroup;
 			children = (
+				344C8D3E2F194E61002A3BBE /* Animal Handbook for RDR2.entitlements */,
 				344C8CC02F157ED9002A3BBE /* Wildlife Handbook for RDR2.storekit */,
 				B9C534D52963AAC80091883A /* Animal Handbook */,
 				B9C534D42963AAC80091883A /* Products */,
@@ -338,9 +342,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Animal Handbook for RDR2.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Animal Handbook/resources/Preview Content\"";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
@@ -370,7 +375,7 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15.6;
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boli.rdr2handbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -391,9 +396,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Animal Handbook for RDR2.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Animal Handbook/resources/Preview Content\"";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
@@ -423,7 +429,7 @@
 					"@executable_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15.6;
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boli.rdr2handbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;

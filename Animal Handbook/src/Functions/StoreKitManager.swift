@@ -15,7 +15,23 @@ class StoreKitManager: ObservableObject {
     @Published var showThankYou = false
     @Published var shouldRequestReview = false
     
-    private var productIDs = ["fivedonation", "twodonation"]
+    // Feature gating
+    @Published var hasPremium: Bool = false // Default to false for testing gate
+    
+    func unlockPremium() async {
+        if let premiumProduct = products.first(where: { $0.id == "premium" }) {
+            do {
+                try await purchase(premiumProduct)
+            } catch {
+                print("Failed to start purchase flow: \(error)")
+            }
+        } else {
+            print("Premium product not found in loaded products")
+        }
+    }
+
+    
+    private var productIDs = ["fivedonation", "twodonation", "premium"]
     
     // UserDefaults keys
     private let launchCountKey = "appLaunchCount"
@@ -34,6 +50,9 @@ class StoreKitManager: ObservableObject {
         
         // Load products
         loadProductsOnInit()
+        
+        // Check for existing entitlements
+        Task { await updateEntitlements() }
     }
     
     private func incrementLaunchCount() {
@@ -79,6 +98,9 @@ class StoreKitManager: ObservableObject {
                 let transaction = try checkVerified(result)
 
                 await transaction.finish()
+                
+                // Update entitlements based on transaction
+                await updateEntitlements()
 
                 // Handle successful purchase (only show thank you once)
                 if transaction.productID == "fivedonation" && !showThankYou {
@@ -87,6 +109,20 @@ class StoreKitManager: ObservableObject {
                 }
             } catch {
                 print("Transaction verification failed: \(error)")
+            }
+        }
+    }
+    
+    @MainActor
+    func updateEntitlements() async {
+        print("Checking entitlements...")
+        for await result in Transaction.currentEntitlements {
+            if case .verified(let transaction) = result {
+                print("Found entitlement: \(transaction.productID)")
+                if transaction.productID == "premium" {
+                    print("✅ Premium entitlement verified!")
+                    hasPremium = true
+                }
             }
         }
     }
@@ -134,7 +170,12 @@ class StoreKitManager: ObservableObject {
         case .success(let verification):
             let transaction = try checkVerified(verification)
             await transaction.finish()
-            if !showThankYou { // Only show once
+            
+            // Explicitly update entitlements after purchase
+            await updateEntitlements()
+            
+            // Only show thank you for donations
+            if product.id.contains("donation") && !showThankYou {
                 showThankYou = true
             }
             print("Purchase successful: \(transaction.productID)")

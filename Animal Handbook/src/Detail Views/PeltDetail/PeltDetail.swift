@@ -33,7 +33,7 @@ struct PeltDetail: View {
                         .modifier(GlassEffectModifier())
                 } else {
                     // Items sections
-                    VStack(alignment: .leading, spacing: 16) {
+                    VStack(alignment: .leading, spacing: 10) {
                         if !pelt.trapperItems.isEmpty
                             && pelt.trapperItems[0].name != ""
                         {
@@ -61,15 +61,11 @@ struct PeltDetail: View {
                             )
                         }
                     }
-                    .padding(.bottom, paddingAmount)
                 }
             }
-            .padding([.horizontal, .bottom])
+            .padding(.horizontal)
         }
-        .background {
-            // Provide a background for glass effects to blur
-            Color.clear
-        }
+     
         .toolbarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .principal) {
@@ -100,25 +96,48 @@ struct PeltDetail: View {
 }
 
 #Preview {
-    NavigationStack {
-        PeltDetail(
-            pelt: Pelt(
-                id: UUID(),
-                name: "Legendary Bear Pelt",
-                description:
-                    "The pelt of the legendary Bharati Grizzly Bear. Can be used to craft rare items.",
-                trapperItems: [
-                    TrapperItem(
+    Text("Parent Background")
+        .sheet(isPresented: .constant(true)) {
+            NavigationStack {
+                PeltDetail(
+                    pelt: Pelt(
                         id: UUID(),
-                        name: "Bear Head Hat",
-                        price: 45.0,
-                        ingredients: ["Legendary Bear Pelt"]
-                    )
-                ],
-                fenceItems: [],
-                campItems: []
-            ),
-            compact: false
-        )
-    }
+                        name: "Legendary Bear Pelt",
+                        description:
+                            "The pelt of the legendary Bharati Grizzly Bear. Can be used to craft rare items.",
+                        trapperItems: [
+                            TrapperItem(
+                                id: UUID(),
+                                name: "Bear Head Hat",
+                                price: 45.0,
+                                ingredients: ["1x Legendary Bear Pelt"]
+                            ),
+                            TrapperItem(
+                                id: UUID(),
+                                name: "Bear Head Hat",
+                                price: 45.0,
+                                ingredients: ["Legendary Bear Pelt"]
+                            )
+                        ],
+                        fenceItems: [
+                            FenceItem(
+                                id: UUID(),
+                                name: "Bear Claw Talisman",
+                                price: 29.0,
+                                ingredients: ["Legendary Bear Claw", "Silver Chain Bracelet", "Quartz Chunk"],
+                                effect: "Decrease health core drain speed by 10%"
+                            )
+                        ],
+                        campItems: [
+                            CampItem(
+                                id: UUID(),
+                                name: "Bear Rug",
+                                ingredients: ["Legendary Bear Pelt"]
+                            )
+                        ]
+                    ),
+                    compact: true
+                )
+            }
+        }
 }

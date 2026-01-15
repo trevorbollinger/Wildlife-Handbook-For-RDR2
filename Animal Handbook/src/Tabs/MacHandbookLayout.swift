@@ -6,10 +6,12 @@ struct MacHandbookLayout: View {
     @State private var selectedAnimal: Animal?
     @State private var selectedPelt: Pelt?
     @State private var selectedSearchItem: SearchableItem?
+    @EnvironmentObject var storeKitManager: StoreKitManager
     
     enum HandbookCategory: String, CaseIterable, Identifiable {
         case animals = "Animals"
-        case pelts = "Pelts"
+
+        case checklist = "Checklist"
         case search = "Search All"
         case credits = "Credits"
         
@@ -18,33 +20,49 @@ struct MacHandbookLayout: View {
         var icon: String {
             switch self {
             case .animals: return "pawprint.fill"
-            case .pelts: return "bag.fill"
+
+            case .checklist: return "checklist"
             case .search: return "magnifyingglass"
             case .credits: return "creditcard.fill"
             }
         }
     }
 
+    var checkListCategories: [HandbookCategory] {
+        HandbookCategory.allCases.filter { category in
+            if category == .checklist {
+                return storeKitManager.hasPremium
+            }
+            return true
+        }
+    }
+
+
+
     var body: some View {
         @Bindable var manager = manager
         
-        if selectedCategory == .credits {
-            // 2-column layout for Credits: Sidebar + Credits content (no detail)
+        if selectedCategory == .credits || selectedCategory == .checklist {
+            // 2-column layout for Credits/Checklist: Sidebar + Content (no detail)
             NavigationSplitView {
-                List(HandbookCategory.allCases, selection: $selectedCategory) { category in
+                List(checkListCategories, selection: $selectedCategory) { category in
                     Label(category.rawValue, systemImage: category.icon)
                         .tag(category)
                 }
                 .listStyle(.sidebar)
                 .navigationTitle("Handbook")
             } detail: {
-                CreditsTab()
-                    .navigationTitle("Credits")
+                if selectedCategory == .checklist {
+                    ChecklistTab()
+                } else {
+                    CreditsTab()
+                        .navigationTitle("Credits")
+                }
             }
         } else {
             // 3-column layout for Animals, Pelts, Search
             NavigationSplitView {
-                List(HandbookCategory.allCases, selection: $selectedCategory) { category in
+                List(checkListCategories, selection: $selectedCategory) { category in
                     Label(category.rawValue, systemImage: category.icon)
                         .tag(category)
                 }
@@ -65,18 +83,12 @@ struct MacHandbookLayout: View {
                         .navigationTitle("Animals")
                         .searchable(text: $manager.filter)
                         
-                    case .pelts:
-                        List(manager.filteredPelts, selection: $selectedPelt) { pelt in
-                            ItemRowDetail(
-                                title: pelt.name,
-                                description: pelt.description,
-                                subtitle: nil
-                            )
-                            .tag(pelt)
-                        }
-                        .navigationTitle("Pelts")
-                        .searchable(text: $manager.filter)
-                        
+
+
+
+                    case .checklist:
+                         EmptyView()
+
                     case .search:
                         List(manager.filteredList, selection: $selectedSearchItem) { item in
                             ItemRowDetail(
@@ -104,12 +116,11 @@ struct MacHandbookLayout: View {
                         } else {
                             ContentUnavailableView("Select an animal", systemImage: "pawprint")
                         }
-                    case .pelts:
-                        if let pelt = selectedPelt {
-                            PeltDetail(pelt: pelt, compact: false)
-                        } else {
-                            ContentUnavailableView("Select a pelt", systemImage: "bag")
-                        }
+
+
+                    case .checklist:
+                        EmptyView()
+                        
                     case .search:
                         if let item = selectedSearchItem {
                             destinationView(for: item)

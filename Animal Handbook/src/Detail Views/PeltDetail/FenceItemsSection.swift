@@ -18,58 +18,172 @@ struct FenceItemsSection: View {
                 .bold()
                 .padding(.bottom, paddingAmount)
             
-            ForEach(0..<fenceItems.count, id: \.self) { i in
-                
-                // Item Container
-                VStack {
-                    //title and price
-                    HStack {
-                        //title
-                        Text(fenceItems[i].name)
-                            .font(.headline)
-                            .bold()
-                            .padding(.bottom, paddingAmount)
-                        
-                        Spacer()
-                        
-                        //price
-                        Text("$\(fenceItems[i].price, specifier: "%.2f")")
-                            .font(.custom("ChineseRocksFree", size: 19))
-                            .bold()
-                            .padding(.bottom, paddingAmount)
-                            .foregroundColor(Color("Money"))
-                    }
-                    
-                    //Effects
-                    HStack() {
-                        Spacer()
-                        Text("\(fenceItems[i].effect)")
-                            .italic()
-                            .padding(.bottom, paddingAmount)
-                        Spacer()
-                    }
-                    
-                    //ingredients list
-                    ForEach(fenceItems[i].ingredients, id: \.self) { ingredient in
-                        HStack(alignment: .top, spacing: 8) {
-                            Text("•")
-                                .foregroundColor(.secondary)
-                            Text(ingredient)
-                            Spacer()
-                        }
-                        
-                    }
-                }
-                .padding()
-                .modifier(GlassEffectModifier())
-                
-                
-      
+            ForEach(fenceItems, id: \.self) { item in
+                FenceItemRow(item: item, paddingAmount: paddingAmount)
             }
-            
         }
-        .padding()
-        .modifier(GlassEffectModifier())
     }
 }
 
+struct FenceItemRow: View {
+    let item: FenceItem
+    let paddingAmount: CGFloat
+    
+    @StateObject private var checklistManager = ChecklistManager.shared
+    @EnvironmentObject var storeKitManager: StoreKitManager
+    @State private var showingProAlert = false
+    
+    var body: some View {
+        // Item Container
+        VStack(alignment: .leading, spacing: 8) {
+            // Title, Price, Checkbox
+            HStack(alignment: .center) {
+                //title
+                Text(item.name)
+                    .font(.custom("ChineseRocksFree", size: 21))
+                    .foregroundColor(.primary)
+                
+                Spacer()
+                
+                //price
+                Text("$\(item.price, specifier: "%.2f")")
+                    .font(.custom("ChineseRocksFree", size: 19))
+                    .bold()
+                    .foregroundColor(Color("Money"))
+                
+                // Checkbox
+                Button(action: {
+                    if !storeKitManager.hasPremium {
+                        showingProAlert = true
+                    } else {
+                        withAnimation(.snappy) {
+                            checklistManager.toggle(item.name)
+                        }
+                    }
+                }) {
+                    Image(systemName: checklistManager.isChecked(item.name) ? "checkmark.circle.fill" : "circle")
+                        .font(.title2)
+                        .foregroundColor(checklistManager.isChecked(item.name) ? Color("Money") : .secondary)
+                }
+                .buttonStyle(.plain)
+                .padding(.leading, 8)
+                .alert("Premium Feature", isPresented: $showingProAlert) {
+                    Button("Unlock Premium") {
+                        Task {
+                            await storeKitManager.unlockPremium()
+                        }
+                    }
+                    Button("Cancel", role: .cancel) { }
+                } message: {
+                    Text("Tracking items is a Premium feature. Unlock to track your progress!")
+                }
+            }
+            
+            Divider()
+                .overlay(Color.primary.opacity(0.1))
+            
+            //Effects
+            if !item.effect.isEmpty {
+                HStack(alignment: .top) {
+                    Text(item.effect)
+                        .italic()
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                    
+                    Spacer()
+                }
+                .padding(.vertical, 4)
+            }
+            
+            //ingredients list
+            VStack(alignment: .leading, spacing: 6) {
+                ForEach(item.ingredients, id: \.self) { ingredient in
+                    // Parse "x1 Name" -> count: "1", name: "Name"
+                    let clean = ingredient.hasPrefix("x") ? String(ingredient.dropFirst()) : ingredient
+                    let parts = clean.split(separator: " ", maxSplits: 1)
+                    let p0 = parts.first.map(String.init) ?? ""
+                    let p1 = parts.count > 1 ? String(parts[1]) : ""
+                    let isNumeric = Int(p0) != nil
+                    
+                    let showCount = ingredient.hasPrefix("x") && isNumeric && parts.count > 1
+                    let displayCount = showCount ? p0 : ""
+                    let displayName = showCount ? p1 : clean
+                    
+                    HStack(alignment: .firstTextBaseline, spacing: 8) {
+                        Image(systemName: "circle.fill")
+                            .font(.system(size: 5))
+                            .foregroundColor(.secondary.opacity(0.7))
+                            .offset(y: -3)
+                        
+                        if !displayCount.isEmpty {
+                            Text("\(displayCount)x")
+                                .font(.subheadline)
+                                .fontWeight(.bold)
+                                .foregroundColor(.secondary)
+                        }
+                        
+                        Text(displayName)
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Spacer()
+                    }
+                }
+            }
+            .padding(.leading, 4)
+        }
+        .padding(14)
+        .modifier(GlassEffectModifier())
+
+
+    }
+}
+
+
+#Preview {
+    Text("Parent Background")
+        .sheet(isPresented: .constant(true)) {
+            NavigationStack {
+                PeltDetail(
+                    pelt: Pelt(
+                        id: UUID(),
+                        name: "Legendary Bear Pelt",
+                        description:
+                            "The pelt of the legendary Bharati Grizzly Bear. Can be used to craft rare items.",
+                        trapperItems: [
+                            TrapperItem(
+                                id: UUID(),
+                                name: "Bear Head Hat",
+                                price: 45.0,
+                                ingredients: ["Legendary Bear Pelt"]
+                            ),
+                            TrapperItem(
+                                id: UUID(),
+                                name: "Bear Head Hat",
+                                price: 45.0,
+                                ingredients: ["Legendary Bear Pelt"]
+                            )
+                        ],
+                        fenceItems: [
+                            FenceItem(
+                                id: UUID(),
+                                name: "Bear Claw Talisman",
+                                price: 29.0,
+                                ingredients: ["Legendary Bear Claw", "Silver Chain Bracelet", "Quartz Chunk"],
+                                effect: "Decrease health core drain speed by 10%"
+                            )
+                        ],
+                        campItems: [
+                            CampItem(
+                                id: UUID(),
+                                name: "Bear Rug",
+                                ingredients: ["Legendary Bear Pelt"]
+                            )
+                        ]
+                    ),
+                    compact: true
+                )
+            }
+        }
+}
