@@ -7,62 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34599F7D2C1B5369007039A7 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34599F7C2C1B5369007039A7 /* Tabs.swift */; };
-		B934FF1B29661ACB005E2E89 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B934FF1A29661ACB005E2E89 /* Animal.swift */; };
-		B934FF1D29661B15005E2E89 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B934FF1C29661B15005E2E89 /* JSONDecoder.swift */; };
-		B9537914296FC1B800D12290 /* LootItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9537913296FC1B800D12290 /* LootItem.swift */; };
-		B97AD74B2966213E00D2BE2F /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = B97AD7492966213E00D2BE2F /* animals.json */; };
-		B97AD74C2966213E00D2BE2F /* pelts.json in Resources */ = {isa = PBXBuildFile; fileRef = B97AD74A2966213E00D2BE2F /* pelts.json */; };
-		B97AD74E296621B600D2BE2F /* PeltRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97AD74D296621B600D2BE2F /* PeltRow.swift */; };
-		B97AD750296621BC00D2BE2F /* PeltDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97AD74F296621BC00D2BE2F /* PeltDetail.swift */; };
-		B97AD7522966222200D2BE2F /* Pelt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97AD7512966222200D2BE2F /* Pelt.swift */; };
-		B98449DF2985C24000004884 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98449DE2985C24000004884 /* CreditsView.swift */; };
-		B9C534D92963AAC80091883A /* AnimalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C534D82963AAC80091883A /* AnimalsView.swift */; };
-		B9C534DB2963AACB0091883A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C534DA2963AACB0091883A /* Assets.xcassets */; };
-		B9C534DE2963AACB0091883A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C534DD2963AACB0091883A /* Preview Assets.xcassets */; };
-		B9C534EB2963B06F0091883A /* PeltsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C534EA2963B06F0091883A /* PeltsView.swift */; };
-		B9C534ED2963B0770091883A /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C534EC2963B0770091883A /* FavoritesView.swift */; };
-		B9C534F92963B6140091883A /* AnimalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C534F82963B6140091883A /* AnimalRow.swift */; };
-		B9C534FB2963B7600091883A /* AnimalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C534FA2963B7600091883A /* AnimalDetail.swift */; };
-		B9DE47E3296C97AA00945556 /* chinese rocks free.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9DE47E2296C97AA00945556 /* chinese rocks free.ttf */; };
+		344C8D042F16A759002A3BBE /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 344C8D032F16A759002A3BBE /* AppIcon.icon */; };
+		34D6A9CD2EE380A3008F3D9A /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 34D6A9C72EE380A3008F3D9A /* animals.json */; };
+		34D6A9CE2EE380A3008F3D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D6A9C82EE380A3008F3D9A /* Assets.xcassets */; };
+		34D6A9CF2EE380A3008F3D9A /* pelts.json in Resources */ = {isa = PBXBuildFile; fileRef = 34D6A9CA2EE380A3008F3D9A /* pelts.json */; };
+		34D6A9D02EE380A3008F3D9A /* rdr 2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34D6A9CB2EE380A3008F3D9A /* rdr 2.ttf */; };
+		34D6A9D12EE380A3008F3D9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D6A9C52EE380A3008F3D9A /* Preview Assets.xcassets */; };
+		34D6A9D22EE380A3008F3D9A /* chinese rocks free.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34D6A9C92EE380A3008F3D9A /* chinese rocks free.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		34599F7C2C1B5369007039A7 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
-		B934FF1A29661ACB005E2E89 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
-		B934FF1C29661B15005E2E89 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
-		B9537913296FC1B800D12290 /* LootItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootItem.swift; sourceTree = "<group>"; };
-		B97AD7492966213E00D2BE2F /* animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
-		B97AD74A2966213E00D2BE2F /* pelts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pelts.json; sourceTree = "<group>"; };
-		B97AD74D296621B600D2BE2F /* PeltRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeltRow.swift; sourceTree = "<group>"; };
-		B97AD74F296621BC00D2BE2F /* PeltDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeltDetail.swift; sourceTree = "<group>"; };
-		B97AD7512966222200D2BE2F /* Pelt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pelt.swift; sourceTree = "<group>"; };
-		B98449DE2985C24000004884 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		344C8CC02F157ED9002A3BBE /* Wildlife Handbook for RDR2.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Wildlife Handbook for RDR2.storekit"; sourceTree = "<group>"; };
+		344C8D032F16A759002A3BBE /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		34D6A9C52EE380A3008F3D9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34D6A9C72EE380A3008F3D9A /* animals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
+		34D6A9C82EE380A3008F3D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34D6A9C92EE380A3008F3D9A /* chinese rocks free.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "chinese rocks free.ttf"; sourceTree = "<group>"; };
+		34D6A9CA2EE380A3008F3D9A /* pelts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pelts.json; sourceTree = "<group>"; };
+		34D6A9CB2EE380A3008F3D9A /* rdr 2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rdr 2.ttf"; sourceTree = "<group>"; };
 		B9C534D32963AAC80091883A /* Animal Handbook for RDR2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animal Handbook for RDR2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9C534D82963AAC80091883A /* AnimalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsView.swift; sourceTree = "<group>"; };
-		B9C534DA2963AACB0091883A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B9C534DD2963AACB0091883A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B9C534EA2963B06F0091883A /* PeltsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeltsView.swift; sourceTree = "<group>"; };
-		B9C534EC2963B0770091883A /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
-		B9C534F82963B6140091883A /* AnimalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalRow.swift; sourceTree = "<group>"; };
-		B9C534FA2963B7600091883A /* AnimalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetail.swift; sourceTree = "<group>"; };
 		B9DE47BC296A706900945556 /* Animal-Handbook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Animal-Handbook-Info.plist"; sourceTree = SOURCE_ROOT; };
-		B9DE47E2296C97AA00945556 /* chinese rocks free.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "chinese rocks free.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		34599F802C1B5440007039A7 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		34D6A9822EE37BBF008F3D9A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Animal_HandbookApp.swift,
-				DestinationTabs.swift,
+				"Detail Views/AnimalDetail/AnimalDetail_IOS.swift",
+				"Detail Views/AnimalDetail/AnimalDetail_MACOS.swift",
+				"Detail Views/AnimalDetail/AnimalDetail_TVOS.swift",
+				"Detail Views/AnimalDetail/InfoSection.swift",
+				"Detail Views/AnimalDetail/LocationsList.swift",
+				"Detail Views/AnimalDetail/LootButton.swift",
+				"Detail Views/AnimalDetail/LootHelpers.swift",
+				"Detail Views/AnimalDetail/LootList.swift",
+				"Detail Views/DonationButton.swift",
+				"Detail Views/ItemRowDetail.swift",
+				"Detail Views/PeltDetail/CampItemsSection.swift",
+				"Detail Views/PeltDetail/FenceItemsSection.swift",
+				"Detail Views/PeltDetail/PeltDetail.swift",
+				"Detail Views/PeltDetail/TrapperItemsSection.swift",
+				Functions/Animal.swift,
+				Functions/DataManager.swift,
+				Functions/FlexibleHeader.swift,
+				Functions/GlassEffectModifier.swift,
+				Functions/JSONDecoder.swift,
+				Functions/Pelt.swift,
+				Functions/StoreKitManager.swift,
+				HandbookApp.swift,
+				HandbookTabs.swift,
+				Tabs/CreditsTab.swift,
+				Tabs/ListTab.swift,
+				Tabs/MacHandbookLayout.swift,
 			);
 			target = B9C534D22963AAC80091883A /* Animal Handbook for RDR2 */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		34599F7F2C1B5438007039A7 /* TopLevel */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (34599F802C1B5440007039A7 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = TopLevel; sourceTree = "<group>"; };
+		34D5421C2EE37AD900ABE592 /* src */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (34D6A9822EE37BBF008F3D9A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = src; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +79,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34D6A9C62EE380A3008F3D9A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				34D6A9C52EE380A3008F3D9A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34D6A9CC2EE380A3008F3D9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				34D6A9C62EE380A3008F3D9A /* Preview Content */,
+				34D6A9C72EE380A3008F3D9A /* animals.json */,
+				34D6A9C82EE380A3008F3D9A /* Assets.xcassets */,
+				34D6A9C92EE380A3008F3D9A /* chinese rocks free.ttf */,
+				34D6A9CA2EE380A3008F3D9A /* pelts.json */,
+				34D6A9CB2EE380A3008F3D9A /* rdr 2.ttf */,
+				344C8D032F16A759002A3BBE /* AppIcon.icon */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B9C534CA2963AAC80091883A = {
 			isa = PBXGroup;
 			children = (
+				344C8CC02F157ED9002A3BBE /* Wildlife Handbook for RDR2.storekit */,
 				B9C534D52963AAC80091883A /* Animal Handbook */,
 				B9C534D42963AAC80091883A /* Products */,
 			);
@@ -96,76 +122,11 @@
 		B9C534D52963AAC80091883A /* Animal Handbook */ = {
 			isa = PBXGroup;
 			children = (
-				34599F7F2C1B5438007039A7 /* TopLevel */,
+				34D5421C2EE37AD900ABE592 /* src */,
 				B9DE47BC296A706900945556 /* Animal-Handbook-Info.plist */,
-				B9C534E52963AB460091883A /* views */,
-				B9C534E92963AB880091883A /* functions */,
-				B9C534E42963AB340091883A /* resources */,
+				34D6A9CC2EE380A3008F3D9A /* Resources */,
 			);
 			path = "Animal Handbook";
-			sourceTree = "<group>";
-		};
-		B9C534DC2963AACB0091883A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				B9C534DD2963AACB0091883A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B9C534E42963AB340091883A /* resources */ = {
-			isa = PBXGroup;
-			children = (
-				B97AD7492966213E00D2BE2F /* animals.json */,
-				B97AD74A2966213E00D2BE2F /* pelts.json */,
-				B9C534DA2963AACB0091883A /* Assets.xcassets */,
-				B9DE47E2296C97AA00945556 /* chinese rocks free.ttf */,
-				B9C534DC2963AACB0091883A /* Preview Content */,
-			);
-			path = resources;
-			sourceTree = "<group>";
-		};
-		B9C534E52963AB460091883A /* views */ = {
-			isa = PBXGroup;
-			children = (
-				B9C534E62963AB500091883A /* main views */,
-				B9C534E82963AB650091883A /* sub views */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
-		B9C534E62963AB500091883A /* main views */ = {
-			isa = PBXGroup;
-			children = (
-				B9C534D82963AAC80091883A /* AnimalsView.swift */,
-				B9C534EA2963B06F0091883A /* PeltsView.swift */,
-				B9C534EC2963B0770091883A /* FavoritesView.swift */,
-				B98449DE2985C24000004884 /* CreditsView.swift */,
-			);
-			path = "main views";
-			sourceTree = "<group>";
-		};
-		B9C534E82963AB650091883A /* sub views */ = {
-			isa = PBXGroup;
-			children = (
-				B9C534FA2963B7600091883A /* AnimalDetail.swift */,
-				B97AD74F296621BC00D2BE2F /* PeltDetail.swift */,
-				B9C534F82963B6140091883A /* AnimalRow.swift */,
-				B97AD74D296621B600D2BE2F /* PeltRow.swift */,
-				B9537913296FC1B800D12290 /* LootItem.swift */,
-			);
-			path = "sub views";
-			sourceTree = "<group>";
-		};
-		B9C534E92963AB880091883A /* functions */ = {
-			isa = PBXGroup;
-			children = (
-				B934FF1A29661ACB005E2E89 /* Animal.swift */,
-				B97AD7512966222200D2BE2F /* Pelt.swift */,
-				B934FF1C29661B15005E2E89 /* JSONDecoder.swift */,
-				34599F7C2C1B5369007039A7 /* Tabs.swift */,
-			);
-			path = functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +157,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					B9C534D22963AAC80091883A = {
 						CreatedOnToolsVersion = 14.1;
@@ -226,11 +187,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B97AD74C2966213E00D2BE2F /* pelts.json in Resources */,
-				B9DE47E3296C97AA00945556 /* chinese rocks free.ttf in Resources */,
-				B97AD74B2966213E00D2BE2F /* animals.json in Resources */,
-				B9C534DE2963AACB0091883A /* Preview Assets.xcassets in Resources */,
-				B9C534DB2963AACB0091883A /* Assets.xcassets in Resources */,
+				34D6A9CD2EE380A3008F3D9A /* animals.json in Resources */,
+				34D6A9CE2EE380A3008F3D9A /* Assets.xcassets in Resources */,
+				34D6A9CF2EE380A3008F3D9A /* pelts.json in Resources */,
+				344C8D042F16A759002A3BBE /* AppIcon.icon in Resources */,
+				34D6A9D02EE380A3008F3D9A /* rdr 2.ttf in Resources */,
+				34D6A9D12EE380A3008F3D9A /* Preview Assets.xcassets in Resources */,
+				34D6A9D22EE380A3008F3D9A /* chinese rocks free.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,19 +204,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9C534FB2963B7600091883A /* AnimalDetail.swift in Sources */,
-				B9C534ED2963B0770091883A /* FavoritesView.swift in Sources */,
-				B9537914296FC1B800D12290 /* LootItem.swift in Sources */,
-				B97AD74E296621B600D2BE2F /* PeltRow.swift in Sources */,
-				B9C534D92963AAC80091883A /* AnimalsView.swift in Sources */,
-				B9C534F92963B6140091883A /* AnimalRow.swift in Sources */,
-				B934FF1D29661B15005E2E89 /* JSONDecoder.swift in Sources */,
-				34599F7D2C1B5369007039A7 /* Tabs.swift in Sources */,
-				B97AD7522966222200D2BE2F /* Pelt.swift in Sources */,
-				B98449DF2985C24000004884 /* CreditsView.swift in Sources */,
-				B97AD750296621BC00D2BE2F /* PeltDetail.swift in Sources */,
-				B9C534EB2963B06F0091883A /* PeltsView.swift in Sources */,
-				B934FF1B29661ACB005E2E89 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +214,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -294,6 +245,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4RH8663V4F;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -311,11 +263,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -325,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -355,6 +309,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4RH8663V4F;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -366,10 +321,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -382,15 +338,26 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Animal Handbook/resources/Preview Content\"";
-				DEVELOPMENT_TEAM = 4RH8663V4F;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Hunting-Handbook-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Handbook;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -402,8 +369,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.1;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boli.rdr2handbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -414,7 +381,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
-				TVOS_DEPLOYMENT_TARGET = 18.0;
+				TVOS_DEPLOYMENT_TARGET = 18.6;
 			};
 			name = Debug;
 		};
@@ -424,15 +391,26 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Animal Handbook/resources/Preview Content\"";
-				DEVELOPMENT_TEAM = 4RH8663V4F;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Hunting-Handbook-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Handbook;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -444,8 +422,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.1;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boli.rdr2handbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -456,7 +434,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
-				TVOS_DEPLOYMENT_TARGET = 18.0;
+				TVOS_DEPLOYMENT_TARGET = 18.6;
 			};
 			name = Release;
 		};
