@@ -26,7 +26,7 @@ struct SplitViewListTab<Item: NamedItem>: View {
         if name == "Animals" {
             NavigationSplitView {
                 List(manager.filteredAnimals, selection: $selectedAnimal) { animal in
-                    ItemRowDetail(
+                    ItemRowView(
                         title: animal.name,
                         description: animal.loot.joined(separator: ", "),
                         subtitle: animal.location.first
@@ -52,7 +52,7 @@ struct SplitViewListTab<Item: NamedItem>: View {
         } else if name == "Pelts" {
             NavigationSplitView {
                 List(manager.filteredPelts, selection: $selectedPelt) { pelt in
-                    ItemRowDetail(
+                    ItemRowView(
                         title: pelt.name,
                         description: pelt.description,
                         subtitle: nil
@@ -78,7 +78,7 @@ struct SplitViewListTab<Item: NamedItem>: View {
         } else if name == "Search" {
             NavigationSplitView {
                 List(manager.filteredList, selection: $selectedSearchItem) { item in
-                    ItemRowDetail(
+                    ItemRowView(
                         title: item.name,
                         description: itemDescription(for: item),
                         subtitle: itemSubtitle(for: item)
@@ -110,6 +110,8 @@ struct SplitViewListTab<Item: NamedItem>: View {
             return animal.loot.joined(separator: ", ")
         case .pelt(let pelt):
             return pelt.description
+        case .checklistItem(let item):
+            return "\(item.type.rawValue) Item"
         }
     }
     
@@ -119,6 +121,8 @@ struct SplitViewListTab<Item: NamedItem>: View {
             return animal.location.first
         case .pelt:
             return ""
+        case .checklistItem:
+            return nil
         }
     }
     
@@ -129,6 +133,9 @@ struct SplitViewListTab<Item: NamedItem>: View {
             AnimalDetail(animal: animal, pelts: manager.pelts)
         case .pelt(let pelt):
             PeltDetail(pelt: pelt, compact: false)
+        case .checklistItem(let item):
+            // user requested "no navigation link" (which implies no deep drill down, but we need something for split view)
+            ItemDetail(item: item)
         }
     }
 }
@@ -141,6 +148,13 @@ struct HandbookTabs: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.requestReview) var requestReview
     @EnvironmentObject var storeKitManager: StoreKitManager
+    @StateObject private var checklistManager = ChecklistManager.shared
+    
+    var trackedItems: [CheckedItem] {
+        manager.checklistItems.filter {
+            checklistManager.isTracked($0.name) && !checklistManager.isCollected($0.name)
+        }
+    }
 
     var body: some View {
 
@@ -165,6 +179,9 @@ struct HandbookTabs: View {
                 if storeKitManager.hasPremium {
                     Tab("Checklist", systemImage: "checklist", value: 4) {
                         ChecklistTab()
+                    }
+                    Tab("Shopping List", systemImage: "cart", value: 5) {
+                        ShoppingListView(items: trackedItems)
                     }
                 }
                 Tab("Credits", systemImage: "creditcard.fill", value: 2) {
@@ -209,6 +226,9 @@ struct HandbookTabs: View {
                 if storeKitManager.hasPremium {
                     Tab("Checklist", systemImage: "checklist", value: 4) {
                         ChecklistTab()
+                    }
+                    Tab("Shopping List", systemImage: "cart", value: 5) {
+                        ShoppingListView(items: trackedItems)
                     }
                 }
 

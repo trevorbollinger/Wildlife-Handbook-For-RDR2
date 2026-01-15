@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ItemRowDetail: View {
+struct ItemRowView: View {
     let title: String
     let description: String
     let subtitle: String?
@@ -37,12 +37,12 @@ struct ItemRowDetail: View {
 
 #Preview {
     List {
-        ItemRowDetail(
+        ItemRowView(
             title: "American Alligator",
             description: "Big teeth, scaly skin, hangs out in swamps.",
             subtitle: "Lemoyne"
         )
-        ItemRowDetail(
+        ItemRowView(
             title: "Badger",
             description: "Small, angry, digs holes.",
             subtitle: nil

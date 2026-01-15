@@ -137,6 +137,27 @@ struct CreditsTab: View {
                     }
                     Spacer()
 
+
+                    if !storeKit.hasPremium {
+                        Button(action: {
+                            storeKit.showPremiumSheet = true
+                        }) {
+                            HStack {
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(.yellow)
+                                Text("Upgrade to Premium")
+                                    .fontWeight(.semibold)
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(20)
+                            .padding(.horizontal)
+                        }
+                        .padding(.bottom, 10)
+                    }
+
                     DonationButton()
                         .padding(.vertical, 10)
 
@@ -179,6 +200,8 @@ struct CreditsTab: View {
                     "Thank you so much for the support! Your donation will go towards keeping the app on the App Store. You are awesome! 🎉"
                 )
             }
+
+            .withPremiumSheet()
         }
     }
 

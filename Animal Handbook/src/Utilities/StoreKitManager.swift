@@ -14,6 +14,7 @@ class StoreKitManager: ObservableObject {
     @Published private(set) var isLoading = false
     @Published var showThankYou = false
     @Published var shouldRequestReview = false
+    @Published var showPremiumSheet = false
     
     // Feature gating
     @Published var hasPremium: Bool = false // Default to false for testing gate

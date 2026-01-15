@@ -76,7 +76,7 @@ struct AnimalDetailTVOS: View {
         .navigationTitle(animal.name)
         .sheet(item: $presentedPelt) { pelt in
             PeltDetail(pelt: pelt, compact: true)
-                .presentationDetents([.medium, .large])
+                .presentationDetents([.medium, .fraction(0.95)])
         }
     }
 }

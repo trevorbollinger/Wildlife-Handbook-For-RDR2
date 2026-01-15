@@ -1,5 +1,5 @@
 //
-//  CampItemsSection.swift
+//  TrapperItemsSection.swift
 //  Animal Handbook for RDR2
 //
 //  Created by Trevor Bollinger on 12/4/25.
@@ -7,37 +7,45 @@
 
 import SwiftUI
 
-struct CampItemsSection: View {
-    let campItems: [CampItem]
+struct TrapperItemsSection: View {
+    let trapperItems: [TrapperItem]
     let paddingAmount: CGFloat
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Camp Items")
+            Text("Trapper Items")
                 .font(.title2)
                 .bold()
                 .padding(.bottom, paddingAmount)
             
-            
-            ForEach(campItems, id: \.self) { item in
-                CampItemRow(item: item, paddingAmount: paddingAmount)
+            ForEach(trapperItems, id: \.self) { item in
+                NavigationLink(destination: ItemDetail(item: CheckedItem(
+                    id: item.id,
+                    name: item.name,
+                    type: .trapper,
+                    price: item.price,
+                    ingredients: item.ingredients,
+                    sourcePeltName: ""
+                ))) {
+                    TrapperItemRow(item: item, paddingAmount: paddingAmount)
+                }
+                .buttonStyle(.plain)
             }
         }
     }
 }
 
-struct CampItemRow: View {
-    let item: CampItem
+struct TrapperItemRow: View {
+    let item: TrapperItem
     let paddingAmount: CGFloat
     
     @StateObject private var checklistManager = ChecklistManager.shared
     @EnvironmentObject var storeKitManager: StoreKitManager
-    @State private var showingProAlert = false
     
     var body: some View {
         //Item Container
         VStack(alignment: .leading, spacing: 8) {
-            // Name and Checkbox
+            // Name and Price
             HStack(alignment: .center) {
                 
                 //Name
@@ -47,10 +55,33 @@ struct CampItemRow: View {
                 
                 Spacer()
                 
+                //Price
+                Text("$\(item.price, specifier: "%.2f")")
+                    .font(.custom("ChineseRocksFree", size: 19))
+                    .bold()
+                    .foregroundColor(Color("Money"))
+                
+                // Tracking Button
+                Button(action: {
+                    if !storeKitManager.hasPremium {
+                        storeKitManager.showPremiumSheet = true
+                    } else {
+                        withAnimation(.snappy) {
+                            checklistManager.toggleTracked(item.name)
+                        }
+                    }
+                }) {
+                    Image(systemName: checklistManager.isTracked(item.name) ? "cart.badge.minus" : "cart.badge.plus")
+                        .font(.title2)
+                        .foregroundColor(checklistManager.isTracked(item.name) ? Color("Money") : .secondary)
+                }
+                .buttonStyle(.plain)
+                .padding(.leading, 8)
+
                 // Checkbox
                 Button(action: {
                     if !storeKitManager.hasPremium {
-                        showingProAlert = true
+                        storeKitManager.showPremiumSheet = true
                     } else {
                         withAnimation(.snappy) {
                             checklistManager.toggle(item.name)
@@ -63,16 +94,6 @@ struct CampItemRow: View {
                 }
                 .buttonStyle(.plain)
                 .padding(.leading, 8)
-                .alert("Pro Feature Locked", isPresented: $showingProAlert) {
-                    Button("Unlock Pro") {
-                        Task {
-                            await storeKitManager.unlockPremium()
-                        }
-                    }
-                    Button("Cancel", role: .cancel) { }
-                } message: {
-                    Text("Tracking collected items is a Pro feature. Unlock to track your progress!")
-                }
             }
             
             Divider()
@@ -91,7 +112,7 @@ struct CampItemRow: View {
                     let showCount = ingredient.hasPrefix("x") && isNumeric && parts.count > 1
                     let displayCount = showCount ? p0 : ""
                     let displayName = showCount ? p1 : clean
-                    
+
                     HStack(alignment: .firstTextBaseline, spacing: 8) {
                         Image(systemName: "circle.fill")
                             .font(.system(size: 5))
@@ -118,9 +139,9 @@ struct CampItemRow: View {
         .padding(14)
         .modifier(GlassEffectModifier())
 
-
     }
 }
+
 
 
 #Preview {
@@ -169,4 +190,3 @@ struct CampItemRow: View {
             }
         }
 }
-

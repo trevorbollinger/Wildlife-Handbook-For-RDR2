@@ -46,7 +46,7 @@ struct ListTab<Item: NamedItem>: View {
                     NavigationLink {
                         AnimalDetail(animal: animal, pelts: manager.pelts)
                     } label: {
-                        ItemRowDetail(
+                        ItemRowView(
                             title: animal.name,
                             description: animal.loot.joined(separator: ", "),
                             subtitle: animal.location.first
@@ -61,7 +61,7 @@ struct ListTab<Item: NamedItem>: View {
                     NavigationLink {
                         PeltDetail(pelt: pelt, compact: false)
                     } label: {
-                        ItemRowDetail(
+                        ItemRowView(
                             title: pelt.name,
                             description: pelt.description,
                             subtitle: nil
@@ -73,14 +73,26 @@ struct ListTab<Item: NamedItem>: View {
                 .isSearchable(selectedTab: selectedTab, filter: $manager.filter)
             } else if name == "Search" {
                 List(manager.filteredList) { item in
-                    NavigationLink {
-                        destinationView(for: item)
-                    } label: {
-                        ItemRowDetail(
-                            title: item.name,
-                            description: itemDescription(for: item),
-                            subtitle: itemSubtitle(for: item)
-                        )
+                    if case .checklistItem(let checkedItem) = item {
+                        NavigationLink {
+                            ItemDetail(item: checkedItem)
+                        } label: {
+                            ItemRowView(
+                                title: checkedItem.name,
+                                description: "\(checkedItem.type.rawValue) Item",
+                                subtitle: nil
+                            )
+                        }
+                    } else {
+                        NavigationLink {
+                            destinationView(for: item)
+                        } label: {
+                            ItemRowView(
+                                title: item.name,
+                                description: itemDescription(for: item),
+                                subtitle: itemSubtitle(for: item)
+                            )
+                        }
                     }
                 }
                 .listStyle(.plain)
@@ -88,7 +100,7 @@ struct ListTab<Item: NamedItem>: View {
                 .isSearchable(selectedTab: selectedTab, filter: $manager.filter)
             } else {
                 List(items) { item in
-                    ItemRowDetail(
+                    ItemRowView(
                         title: item.name,
                         description: "",
                         subtitle: nil
@@ -107,6 +119,8 @@ struct ListTab<Item: NamedItem>: View {
             return animal.loot.joined(separator: ", ")
         case .pelt(let pelt):
             return pelt.description
+        case .checklistItem(let item):
+            return "\(item.type.rawValue) Item"
         }
     }
 
@@ -116,6 +130,8 @@ struct ListTab<Item: NamedItem>: View {
             return animal.location.first
         case .pelt:
             return ""
+        case .checklistItem:
+            return nil
         }
     }
 
@@ -126,6 +142,8 @@ struct ListTab<Item: NamedItem>: View {
             AnimalDetail(animal: animal, pelts: manager.pelts)
         case .pelt(let pelt):
             PeltDetail(pelt: pelt, compact: false)
+        case .checklistItem:
+            EmptyView()
         }
     }
 }

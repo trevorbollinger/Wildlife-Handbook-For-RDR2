@@ -34,34 +34,38 @@
 		34D6A9822EE37BBF008F3D9A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"Detail Views/AnimalDetail/AnimalDetail_IOS.swift",
-				"Detail Views/AnimalDetail/AnimalDetail_MACOS.swift",
-				"Detail Views/AnimalDetail/AnimalDetail_TVOS.swift",
-				"Detail Views/AnimalDetail/InfoSection.swift",
-				"Detail Views/AnimalDetail/LocationsList.swift",
-				"Detail Views/AnimalDetail/LootButton.swift",
-				"Detail Views/AnimalDetail/LootHelpers.swift",
-				"Detail Views/AnimalDetail/LootList.swift",
-				"Detail Views/DonationButton.swift",
-				"Detail Views/ItemRowDetail.swift",
-				"Detail Views/PeltDetail/CampItemsSection.swift",
-				"Detail Views/PeltDetail/FenceItemsSection.swift",
-				"Detail Views/PeltDetail/PeltDetail.swift",
-				"Detail Views/PeltDetail/TrapperItemsSection.swift",
-				Functions/Animal.swift,
-				Functions/ChecklistManager.swift,
-				Functions/DataManager.swift,
-				Functions/FlexibleHeader.swift,
-				Functions/GlassEffectModifier.swift,
-				Functions/JSONDecoder.swift,
-				Functions/Pelt.swift,
-				Functions/StoreKitManager.swift,
-				HandbookApp.swift,
-				HandbookTabs.swift,
-				Tabs/ChecklistTab.swift,
-				Tabs/CreditsTab.swift,
-				Tabs/ListTab.swift,
-				Tabs/MacHandbookLayout.swift,
+				App/HandbookApp.swift,
+				App/HandbookLayoutMac.swift,
+				App/HandbookTabs.swift,
+				Features/AnimalList/AnimalDetail/AnimalDetail_IOS.swift,
+				Features/AnimalList/AnimalDetail/AnimalDetail_MACOS.swift,
+				Features/AnimalList/AnimalDetail/AnimalDetail_TVOS.swift,
+				Features/AnimalList/AnimalDetail/InfoSection.swift,
+				Features/AnimalList/AnimalDetail/LocationsList.swift,
+				Features/AnimalList/AnimalDetail/LootButton.swift,
+				Features/AnimalList/AnimalDetail/LootHelpers.swift,
+				Features/AnimalList/AnimalDetail/LootList.swift,
+				Features/AnimalList/ItemDetail.swift,
+				Features/AnimalList/ItemRowView.swift,
+				Features/AnimalList/ListTab.swift,
+				Features/AnimalList/PeltDetail/CampItemsSection.swift,
+				Features/AnimalList/PeltDetail/FenceItemsSection.swift,
+				Features/AnimalList/PeltDetail/PeltDetail.swift,
+				Features/AnimalList/PeltDetail/TrapperItemsSection.swift,
+				Features/Credits/CreditsTab.swift,
+				Features/Premium/Checklist/ChecklistManager.swift,
+				Features/Premium/Checklist/ChecklistRow.swift,
+				Features/Premium/Checklist/ChecklistTab.swift,
+				Features/Premium/PurchasePremiumView.swift,
+				Features/Premium/ShoppingList/ShoppingListView.swift,
+				Models/Animal.swift,
+				Models/Pelt.swift,
+				Utilities/DataManager.swift,
+				Utilities/DonationButton.swift,
+				Utilities/FlexibleHeader.swift,
+				Utilities/GlassEffectModifier.swift,
+				Utilities/JSONDecoder.swift,
+				Utilities/StoreKitManager.swift,
 			);
 			target = B9C534D22963AAC80091883A /* Animal Handbook for RDR2 */;
 		};
@@ -374,8 +378,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.6;
-				MARKETING_VERSION = 1.2.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boli.rdr2handbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -386,7 +390,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
-				TVOS_DEPLOYMENT_TARGET = 18.6;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
 			};
 			name = Debug;
 		};
@@ -428,8 +432,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.6;
-				MARKETING_VERSION = 1.2.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boli.rdr2handbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -440,7 +444,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
-				TVOS_DEPLOYMENT_TARGET = 18.6;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
 			};
 			name = Release;
 		};

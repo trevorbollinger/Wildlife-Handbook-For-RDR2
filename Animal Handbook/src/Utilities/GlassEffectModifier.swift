@@ -16,7 +16,7 @@ struct GlassEffectModifier: ViewModifier {
         } else {
             content
                 .background(Color.secondary.opacity(0.1))
-                .cornerRadius(12)
+                .cornerRadius(20)
         }
     }
 }
@@ -48,5 +48,22 @@ extension Material {
             .padding()
             .modifier(GlassEffectModifier())
             .frame(width: 200, height: 100)
+    }
+}
+
+struct PremiumSheetModifier: ViewModifier {
+    @EnvironmentObject var storeKitManager: StoreKitManager
+
+    func body(content: Content) -> some View {
+        content
+            .sheet(isPresented: $storeKitManager.showPremiumSheet) {
+                PurchasePremiumView()
+            }
+    }
+}
+
+extension View {
+    func withPremiumSheet() -> some View {
+        modifier(PremiumSheetModifier())
     }
 }

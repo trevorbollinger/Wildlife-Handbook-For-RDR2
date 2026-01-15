@@ -7,11 +7,13 @@ struct MacHandbookLayout: View {
     @State private var selectedPelt: Pelt?
     @State private var selectedSearchItem: SearchableItem?
     @EnvironmentObject var storeKitManager: StoreKitManager
+    @StateObject private var checklistManager = ChecklistManager.shared
     
     enum HandbookCategory: String, CaseIterable, Identifiable {
         case animals = "Animals"
 
         case checklist = "Checklist"
+        case shoppingList = "Shopping List"
         case search = "Search All"
         case credits = "Credits"
         
@@ -22,6 +24,7 @@ struct MacHandbookLayout: View {
             case .animals: return "pawprint.fill"
 
             case .checklist: return "checklist"
+            case .shoppingList: return "cart"
             case .search: return "magnifyingglass"
             case .credits: return "creditcard.fill"
             }
@@ -30,10 +33,16 @@ struct MacHandbookLayout: View {
 
     var checkListCategories: [HandbookCategory] {
         HandbookCategory.allCases.filter { category in
-            if category == .checklist {
+            if category == .checklist || category == .shoppingList {
                 return storeKitManager.hasPremium
             }
             return true
+        }
+    }
+    
+    var trackedItems: [CheckedItem] {
+        manager.checklistItems.filter {
+            checklistManager.isTracked($0.name) && !checklistManager.isCollected($0.name)
         }
     }
 
@@ -42,8 +51,8 @@ struct MacHandbookLayout: View {
     var body: some View {
         @Bindable var manager = manager
         
-        if selectedCategory == .credits || selectedCategory == .checklist {
-            // 2-column layout for Credits/Checklist: Sidebar + Content (no detail)
+        if selectedCategory == .credits || selectedCategory == .checklist || selectedCategory == .shoppingList {
+            // 2-column layout for Credits/Checklist/ShoppingList: Sidebar + Content (no detail)
             NavigationSplitView {
                 List(checkListCategories, selection: $selectedCategory) { category in
                     Label(category.rawValue, systemImage: category.icon)
@@ -54,6 +63,8 @@ struct MacHandbookLayout: View {
             } detail: {
                 if selectedCategory == .checklist {
                     ChecklistTab()
+                } else if selectedCategory == .shoppingList {
+                    ShoppingListView(items: trackedItems)
                 } else {
                     CreditsTab()
                         .navigationTitle("Credits")
@@ -73,7 +84,7 @@ struct MacHandbookLayout: View {
                     switch category {
                     case .animals:
                         List(manager.filteredAnimals, selection: $selectedAnimal) { animal in
-                            ItemRowDetail(
+                            ItemRowView(
                                 title: animal.name,
                                 description: animal.loot.joined(separator: ", "),
                                 subtitle: animal.location.first
@@ -86,12 +97,12 @@ struct MacHandbookLayout: View {
 
 
 
-                    case .checklist:
+                    case .checklist, .shoppingList:
                          EmptyView()
 
                     case .search:
                         List(manager.filteredList, selection: $selectedSearchItem) { item in
-                            ItemRowDetail(
+                            ItemRowView(
                                 title: item.name,
                                 description: itemDescription(for: item),
                                 subtitle: itemSubtitle(for: item)
@@ -118,7 +129,7 @@ struct MacHandbookLayout: View {
                         }
 
 
-                    case .checklist:
+                    case .checklist, .shoppingList:
                         EmptyView()
                         
                     case .search:
@@ -146,6 +157,10 @@ struct MacHandbookLayout: View {
             return animal.loot.joined(separator: ", ")
         case .pelt(let pelt):
             return pelt.description
+        case .checklistItem(let item):
+            return "\(item.type.rawValue) Item"
+        default:
+            return ""
         }
     }
     
@@ -155,6 +170,10 @@ struct MacHandbookLayout: View {
             return animal.location.first
         case .pelt:
             return ""
+        case .checklistItem:
+            return nil
+        default:
+            return nil
         }
     }
     
@@ -165,6 +184,10 @@ struct MacHandbookLayout: View {
             AnimalDetail_MACOS(animal: animal, pelts: manager.pelts)
         case .pelt(let pelt):
             PeltDetail(pelt: pelt, compact: false)
+        case .checklistItem(let item):
+            ItemDetail(item: item)
+        default:
+            EmptyView()
         }
     }
 }

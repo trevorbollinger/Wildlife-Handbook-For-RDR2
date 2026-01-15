@@ -92,6 +92,7 @@ struct PeltDetail: View {
                 }
             #endif
         }
+        .withPremiumSheet()
     }
 }
 

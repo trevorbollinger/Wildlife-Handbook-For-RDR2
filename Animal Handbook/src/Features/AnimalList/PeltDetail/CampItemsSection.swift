@@ -1,5 +1,5 @@
 //
-//  FenceItemsSection.swift
+//  CampItemsSection.swift
 //  Animal Handbook for RDR2
 //
 //  Created by Trevor Bollinger on 12/4/25.
@@ -7,54 +7,76 @@
 
 import SwiftUI
 
-struct FenceItemsSection: View {
-    let fenceItems: [FenceItem]
+struct CampItemsSection: View {
+    let campItems: [CampItem]
     let paddingAmount: CGFloat
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Fence Items")
+            Text("Camp Items")
                 .font(.title2)
                 .bold()
                 .padding(.bottom, paddingAmount)
             
-            ForEach(fenceItems, id: \.self) { item in
-                FenceItemRow(item: item, paddingAmount: paddingAmount)
+            
+            ForEach(campItems, id: \.self) { item in
+                NavigationLink(destination: ItemDetail(item: CheckedItem(
+                    id: item.id,
+                    name: item.name,
+                    type: .camp,
+                    price: nil,
+                    ingredients: item.ingredients,
+                    sourcePeltName: ""
+                ))) {
+                    CampItemRow(item: item, paddingAmount: paddingAmount)
+                }
+                .buttonStyle(.plain)
             }
         }
     }
 }
 
-struct FenceItemRow: View {
-    let item: FenceItem
+struct CampItemRow: View {
+    let item: CampItem
     let paddingAmount: CGFloat
     
     @StateObject private var checklistManager = ChecklistManager.shared
     @EnvironmentObject var storeKitManager: StoreKitManager
-    @State private var showingProAlert = false
     
     var body: some View {
-        // Item Container
+        //Item Container
         VStack(alignment: .leading, spacing: 8) {
-            // Title, Price, Checkbox
+            // Name and Checkbox
             HStack(alignment: .center) {
-                //title
+                
+                //Name
                 Text(item.name)
                     .font(.custom("ChineseRocksFree", size: 21))
                     .foregroundColor(.primary)
                 
                 Spacer()
                 
-                //price
-                Text("$\(item.price, specifier: "%.2f")")
-                    .font(.custom("ChineseRocksFree", size: 19))
-                    .bold()
-                    .foregroundColor(Color("Money"))
-                
+                // Tracking Button
+                Button(action: {
+                    if !storeKitManager.hasPremium {
+                        storeKitManager.showPremiumSheet = true
+                    } else {
+                        withAnimation(.snappy) {
+                            checklistManager.toggleTracked(item.name)
+                        }
+                    }
+                }) {
+                    Image(systemName: checklistManager.isTracked(item.name) ? "cart.badge.minus" : "cart.badge.plus")
+                        .font(.title2)
+                        .foregroundColor(checklistManager.isTracked(item.name) ? Color("Money") : .secondary)
+                }
+                .buttonStyle(.plain)
+                .padding(.leading, 8)
+
                 // Checkbox
                 Button(action: {
                     if !storeKitManager.hasPremium {
-                        showingProAlert = true
+                        storeKitManager.showPremiumSheet = true
                     } else {
                         withAnimation(.snappy) {
                             checklistManager.toggle(item.name)
@@ -67,36 +89,12 @@ struct FenceItemRow: View {
                 }
                 .buttonStyle(.plain)
                 .padding(.leading, 8)
-                .alert("Premium Feature", isPresented: $showingProAlert) {
-                    Button("Unlock Premium") {
-                        Task {
-                            await storeKitManager.unlockPremium()
-                        }
-                    }
-                    Button("Cancel", role: .cancel) { }
-                } message: {
-                    Text("Tracking items is a Premium feature. Unlock to track your progress!")
-                }
             }
             
             Divider()
                 .overlay(Color.primary.opacity(0.1))
             
-            //Effects
-            if !item.effect.isEmpty {
-                HStack(alignment: .top) {
-                    Text(item.effect)
-                        .italic()
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                        .fixedSize(horizontal: false, vertical: true)
-                    
-                    Spacer()
-                }
-                .padding(.vertical, 4)
-            }
-            
-            //ingredients list
+            //Ingredients List
             VStack(alignment: .leading, spacing: 6) {
                 ForEach(item.ingredients, id: \.self) { ingredient in
                     // Parse "x1 Name" -> count: "1", name: "Name"
@@ -187,3 +185,4 @@ struct FenceItemRow: View {
             }
         }
 }
+

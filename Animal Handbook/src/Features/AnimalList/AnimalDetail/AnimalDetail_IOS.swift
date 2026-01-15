@@ -117,6 +117,7 @@ struct AnimalDetail: View {
                 }
                 .presentationDetents([.medium, .fraction(0.95)])
             }
+            .withPremiumSheet()
         #endif
     }
 }

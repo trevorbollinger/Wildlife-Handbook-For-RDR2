@@ -16,7 +16,7 @@ struct AnimalDetail_MACOS: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(height: 300)
                     .clipped()
-                    .cornerRadius(12)
+                    .cornerRadius(20)
 
                 // Animal Name and Danger Warning
                 HStack {
@@ -44,7 +44,7 @@ struct AnimalDetail_MACOS: View {
                             .lineSpacing(4)
                             .padding()
                             .background(.regularMaterial)
-                            .cornerRadius(12)
+                            .cornerRadius(20)
                     }
 
                     // Combined Info Grid
@@ -90,5 +90,6 @@ struct AnimalDetail_MACOS: View {
              PeltDetail(pelt: pelt, compact: false)
                 .frame(minWidth: 500, minHeight: 600)
         }
+        .withPremiumSheet()
     }
 }
