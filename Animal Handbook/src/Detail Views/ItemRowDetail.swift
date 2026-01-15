@@ -21,16 +21,31 @@ struct ItemRowDetail: View {
                 Spacer()
                 if let subtitle = subtitle {
                     Text(subtitle)
-                        .font(.caption)
-                        .foregroundColor(.primary)
-                }
+                    .font(.caption)
+                    .foregroundColor(.primary)
             }
-            
-            Text(description)
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-                .lineLimit(2)
         }
-        .padding(.vertical, 0)
+        
+        Text(description)
+            .font(.subheadline)
+            .foregroundColor(.secondary)
+            .lineLimit(2)
+    }
+    .padding(.vertical, 0)
+    }
+}
+
+#Preview {
+    List {
+        ItemRowDetail(
+            title: "American Alligator",
+            description: "Big teeth, scaly skin, hangs out in swamps.",
+            subtitle: "Lemoyne"
+        )
+        ItemRowDetail(
+            title: "Badger",
+            description: "Small, angry, digs holes.",
+            subtitle: nil
+        )
     }
 }

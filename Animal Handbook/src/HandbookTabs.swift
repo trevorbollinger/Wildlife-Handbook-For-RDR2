@@ -139,10 +139,13 @@ struct HandbookTabs: View {
     @Environment(DataManager.self) var manager
     @SceneStorage("selectedTab") var selectedTab = 0
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.requestReview) var requestReview
+    @EnvironmentObject var storeKitManager: StoreKitManager
 
     var body: some View {
 
-        if horizontalSizeClass == .compact {
+        Group {
+            if horizontalSizeClass == .compact {
             //IPHONE VIEW
             TabView(selection: $selectedTab) {
                 Tab("Animals", systemImage: "pawprint.fill", value: 0) {
@@ -216,7 +219,21 @@ struct HandbookTabs: View {
             .tabViewStyle(.sidebarAdaptable)
             #endif
         }
+        }
+        .onChange(of: storeKitManager.shouldRequestReview) { _, newValue in
+            if newValue {
+                requestReview()
+                storeKitManager.markReviewRequested()
+            }
+        }
 
     }
 }
 
+
+
+#Preview {
+    HandbookTabs()
+        .environment(DataManager())
+        .environmentObject(StoreKitManager())
+}

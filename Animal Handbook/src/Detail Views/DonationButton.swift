@@ -103,3 +103,8 @@ struct DonationButton: View {
     }
 }
 
+#Preview {
+    DonationButton()
+        .environmentObject(StoreKitManager())
+}
+

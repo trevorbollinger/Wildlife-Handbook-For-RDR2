@@ -187,3 +187,8 @@ struct CreditsTab: View {
     }
 }
 
+#Preview {
+    CreditsTab()
+        .environmentObject(StoreKitManager())
+}
+

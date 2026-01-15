@@ -48,18 +48,16 @@ struct AnimalDetail: View {
                             Image(systemName: "hazardsign.fill")
                                 .font(.system(size: 32, design: .rounded))
                                 .foregroundColor(.red)
-                            
 
                         }
                         .padding(.horizontal)
                         .padding(.top, 8)
-                    //Without Warning
+                        //Without Warning
                     } else {
                         HStack {
                             Text(animal.name)
                                 .font(.custom("ChineseRocksFree", size: 40))
                                 .padding(.bottom, 8)
-
 
                         }
                         .padding(.horizontal)
@@ -77,8 +75,6 @@ struct AnimalDetail: View {
                             .padding()
                             .modifier(GlassEffectModifier())
                         }
-                        
-                        
 
                         // Locations Section
                         InfoSection(icon: "map", title: "Locations") {
@@ -125,5 +121,24 @@ struct AnimalDetail: View {
     }
 }
 
-
-
+#Preview {
+    NavigationStack {
+        AnimalDetail(
+            animal: Animal(
+                id: UUID(),
+                name: "American Alligator (Small)",
+                description:
+                    "Native to the swamps and bayous of Lemoyne, the American Alligator is a carnivorous apex predator.",
+                location: ["Lemoyne", "Lagras"],
+                loot: [
+                    "Big Game Meat", "Alligator Tooth",
+                    "Perfect Alligator Skin",
+                ],
+                tips: "Use a rifle for a clean kill.",
+                trivia: "They are older than dinosaurs.",
+                danger: "5"
+            ),
+            pelts: []
+        )
+    }
+}

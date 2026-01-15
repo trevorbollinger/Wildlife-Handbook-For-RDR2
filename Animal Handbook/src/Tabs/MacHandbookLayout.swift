@@ -157,3 +157,8 @@ struct MacHandbookLayout: View {
         }
     }
 }
+
+#Preview {
+    MacHandbookLayout()
+        .environment(DataManager())
+}

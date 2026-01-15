@@ -13,19 +13,48 @@ class StoreKitManager: ObservableObject {
     @Published private(set) var products: [Product] = []
     @Published private(set) var isLoading = false
     @Published var showThankYou = false
-
+    @Published var shouldRequestReview = false
+    
     private var productIDs = ["fivedonation", "twodonation"]
+    
+    // UserDefaults keys
+    private let launchCountKey = "appLaunchCount"
+    private let reviewRequestedKey = "hasRequestedAppStoreReview"
 
     // Transaction listener task - must be started before any purchases
     private var transactionTask: Task<Void, Never>?
 
     init() {
+        // Track app launches
+        incrementLaunchCount()
+        
         // All stored properties are now initialized
         // Start listening for transaction updates immediately (required for StoreKit compliance)
         startTransactionListener()
         
         // Load products
         loadProductsOnInit()
+    }
+    
+    private func incrementLaunchCount() {
+        let currentCount = UserDefaults.standard.integer(forKey: launchCountKey)
+        let newCount = currentCount + 1
+        UserDefaults.standard.set(newCount, forKey: launchCountKey)
+        print("App Launch Count: \(newCount)")
+        
+        let hasRequested = UserDefaults.standard.bool(forKey: reviewRequestedKey)
+        
+        if newCount == 2 && !hasRequested {
+            // Delay slightly to let the app load UI
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) { [weak self] in
+                self?.shouldRequestReview = true
+            }
+        }
+    }
+    
+    func markReviewRequested() {
+        UserDefaults.standard.set(true, forKey: reviewRequestedKey)
+        shouldRequestReview = false
     }
     
     private func startTransactionListener() {

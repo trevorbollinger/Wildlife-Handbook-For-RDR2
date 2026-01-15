@@ -39,3 +39,14 @@ struct GlassButtonStyleModifier: ViewModifier {
 extension Material {
     static let liquidGlass = Material.ultraThin
 }
+
+#Preview {
+    ZStack {
+        Color.blue
+        
+        Text("Glass Effect")
+            .padding()
+            .modifier(GlassEffectModifier())
+            .frame(width: 200, height: 100)
+    }
+}

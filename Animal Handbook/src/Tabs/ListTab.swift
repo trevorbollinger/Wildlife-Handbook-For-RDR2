@@ -118,7 +118,7 @@ struct ListTab<Item: NamedItem>: View {
             return ""
         }
     }
-    
+
     @ViewBuilder
     private func destinationView(for item: SearchableItem) -> some View {
         switch item {
@@ -128,4 +128,13 @@ struct ListTab<Item: NamedItem>: View {
             PeltDetail(pelt: pelt, compact: false)
         }
     }
+}
+
+#Preview {
+    ListTab(
+        items: [] as [Animal],  // DataManager will populate this in a real app, but for preview we can pass empty or rely on the environment modification if the view read directly from environment. NOTE: The view uses `manager.filteredAnimals` for "Animals" case, so passing items: [] is fine as it ignores it for "Animals" case.
+        name: "Animals",
+        jsonFile: "animals.json"
+    )
+    .environment(DataManager())
 }

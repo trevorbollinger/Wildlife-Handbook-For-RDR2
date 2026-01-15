@@ -68,3 +68,21 @@ extension View {
         modifier(FlexibleHeaderContentModifier())
     }
 }
+
+
+#Preview {
+    ScrollView {
+        Color.red
+            .flexibleHeaderContent()
+        
+        VStack {
+            ForEach(0..<20) { i in
+                Text("Item \(i)")
+                    .frame(maxWidth: .infinity)
+                    .padding()
+            }
+        }
+    }
+    .flexibleHeaderScrollView()
+    .ignoresSafeArea(edges: .top)
+}
