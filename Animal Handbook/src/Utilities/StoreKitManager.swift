@@ -10,6 +10,9 @@ import SwiftUI
 
 @MainActor
 class StoreKitManager: ObservableObject {
+    private let launchCountForReview = 3
+    private let reviewPromptDelay = 7.0
+    
     @Published private(set) var products: [Product] = []
     @Published private(set) var isLoading = false
     @Published var showThankYou = false
@@ -64,9 +67,9 @@ class StoreKitManager: ObservableObject {
         
         let hasRequested = UserDefaults.standard.bool(forKey: reviewRequestedKey)
         
-        if newCount == 2 && !hasRequested {
+        if newCount == launchCountForReview && !hasRequested {
             // Delay slightly to let the app load UI
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) { [weak self] in
+            DispatchQueue.main.asyncAfter(deadline: .now() + reviewPromptDelay) { [weak self] in
                 self?.shouldRequestReview = true
             }
         }
@@ -136,30 +139,10 @@ class StoreKitManager: ObservableObject {
         
         do {
             products = try await Product.products(for: productIDs)
-            print("✅ Successfully loaded \(products.count) products")
+            print("Successfully loaded \(products.count) products")
             
-            if products.isEmpty {
-                print("⚠️ WARNING: 0 products loaded!")
-                print("📋 Requested IDs: \(productIDs)")
-                print("💡 Possible issues:")
-                print("   1. StoreKit configuration file not selected in scheme")
-                print("   2. Product IDs don't match App Store Connect")
-                print("   3. Products not approved/available in App Store Connect")
-                print("   4. Not signed in with sandbox account (if on device)")
-            } else {
-                for product in products {
-                    print("   📦 Product: \(product.id)")
-                    print("      Name: \(product.displayName)")
-                    print("      Price: \(product.displayPrice)")
-                }
-            }
         } catch {
-            print("❌ Failed to load products: \(error)")
-            print("   Error details: \(error.localizedDescription)")
-            print("   Make sure:")
-            print("   1. In-App Purchase capability is enabled")
-            print("   2. StoreKit config file is selected in scheme (Edit Scheme > Run > Options)")
-            print("   3. Product IDs in code match App Store Connect exactly")
+            print("Failed to load products: \(error)\n\(error.localizedDescription)")
         }
     }
 

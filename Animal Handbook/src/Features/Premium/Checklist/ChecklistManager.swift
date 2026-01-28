@@ -12,8 +12,8 @@ class ChecklistManager: ObservableObject {
     static let shared = ChecklistManager()
     
     // Storing item names instead of UUIDs
-    @Published private var collectedItems: Set<String> = []
-    @Published private var trackedItems: Set<String> = []
+    @Published private(set) var collectedItems: Set<String> = []
+    @Published private(set) var trackedItems: Set<String> = []
     
     private let store = NSUbiquitousKeyValueStore.default
     private let collectedKey = "collected_items_v3"

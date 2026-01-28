@@ -75,12 +75,6 @@ struct AnimalDetail: View {
                             .padding()
                             .modifier(GlassEffectModifier())
                         }
-
-                        // Locations Section
-                        InfoSection(icon: "map", title: "Locations") {
-                            LocationsList(locations: animal.location)
-                        }
-
                         // Drops Section
                         if !animal.loot.isEmpty {
                             InfoSection(icon: "bag", title: "Drops") {
@@ -91,6 +85,13 @@ struct AnimalDetail: View {
                                 )
                             }
                         }
+                        
+                        // Locations Section
+                        InfoSection(icon: "map", title: "Locations") {
+                            LocationsList(locations: animal.location)
+                        }
+
+                      
 
                         // Tips Section
                         if !animal.tips.isEmpty {
@@ -117,7 +118,6 @@ struct AnimalDetail: View {
                 }
                 .presentationDetents([.medium, .fraction(0.95)])
             }
-            .withPremiumSheet()
         #endif
     }
 }
@@ -141,5 +141,6 @@ struct AnimalDetail: View {
             ),
             pelts: []
         )
+        .environmentObject(StoreKitManager())
     }
 }

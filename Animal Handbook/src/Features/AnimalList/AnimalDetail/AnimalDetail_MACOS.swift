@@ -90,6 +90,5 @@ struct AnimalDetail_MACOS: View {
              PeltDetail(pelt: pelt, compact: false)
                 .frame(minWidth: 500, minHeight: 600)
         }
-        .withPremiumSheet()
     }
 }

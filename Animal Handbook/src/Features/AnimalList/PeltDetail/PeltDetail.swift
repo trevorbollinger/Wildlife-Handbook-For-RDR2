@@ -12,6 +12,7 @@ struct PeltDetail: View {
     let pelt: Pelt
     let compact: Bool
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject var storeKitManager: StoreKitManager
 
     let paddingAmount = 3.0
 
@@ -92,7 +93,10 @@ struct PeltDetail: View {
                 }
             #endif
         }
-        .withPremiumSheet()
+        .sheet(isPresented: $storeKitManager.showPremiumSheet) {
+            PurchasePremiumView()
+                .environmentObject(storeKitManager)
+        }
     }
 }
 
@@ -139,6 +143,7 @@ struct PeltDetail: View {
                     ),
                     compact: true
                 )
+                .environmentObject(StoreKitManager())
             }
         }
 }

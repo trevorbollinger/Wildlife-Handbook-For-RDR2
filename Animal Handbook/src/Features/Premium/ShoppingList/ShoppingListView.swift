@@ -8,45 +8,12 @@
 import SwiftUI
 import Foundation
 
-struct ShoppingListItem: Identifiable, Hashable {
-    let id = UUID()
-    let name: String
-    let count: Int
-}
-
 struct ShoppingListView: View {
-    let items: [CheckedItem] 
+    let items: [CheckedItem]
     
     // Aggregate ingredients from all items
     var shoppingList: [ShoppingListItem] {
-        var ingredientCounts: [String: Int] = [:]
-        
-        for item in items {
-            for ingredient in item.ingredients {
-                // Parse "x2 Perfect Bear Pelt" or "Perfect Bear Pelt"
-                let clean = ingredient.hasPrefix("x") ? String(ingredient.dropFirst()) : ingredient
-                let parts = clean.split(separator: " ", maxSplits: 1)
-                
-                var count = 1
-                var name = clean
-                
-                if let firstPart = parts.first, let parsedCount = Int(firstPart) {
-                    count = parsedCount
-                    if parts.count > 1 {
-                        name = String(parts[1])
-                    }
-                }
-                
-                // Normalization for grouping (trim whitespace)
-                let trimmedName = name.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-                if !trimmedName.isEmpty {
-                    ingredientCounts[trimmedName, default: 0] += count
-                }
-            }
-        }
-        
-        return ingredientCounts.map { ShoppingListItem(name: $0.key, count: $0.value) }
-            .sorted { $0.name < $1.name }
+        ShoppingListHelper.generateShoppingList(from: items)
     }
     
     var totalCost: Double {
@@ -56,13 +23,7 @@ struct ShoppingListView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
-                    // Header
-                    Text("Shopping List")
-                        .font(.custom("ChineseRocksFree", size: 32))
-                        .foregroundColor(.primary)
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .padding(.top, 10)
+                VStack(alignment: .leading, spacing: 10) {
                     
                     if items.isEmpty {
                         ContentUnavailableView("No Items Tracked", systemImage: "cart.badge.plus", description: Text("Add items to your cart from the Checklist."))
@@ -70,23 +31,18 @@ struct ShoppingListView: View {
                     } else {
                         // Total Cost Section
                         HStack {
-                            Text("Total Estimated Cost:")
+                            Text("Total Cost:")
                                 .font(.headline)
-                                .foregroundColor(.secondary)
                             Spacer()
                             Text("$\(totalCost, specifier: "%.2f")")
                                 .font(.custom("ChineseRocksFree", size: 28))
                                 .foregroundColor(Color("Money"))
                         }
-                        .padding()
-                        .background(
-                            RoundedRectangle(cornerRadius: 12)
-                                .fill(Color("Money").opacity(0.1))
-                        )
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .stroke(Color("Money").opacity(0.3), lineWidth: 1)
-                        )
+                        
+                        .padding(.horizontal)
+                        .padding(.vertical,8)
+                        .modifier(GlassEffectModifier())
+
                         
                         // Ingredients Section
                         VStack(alignment: .leading, spacing: 8) {
@@ -96,12 +52,13 @@ struct ShoppingListView: View {
                                 .padding(.bottom, 4)
                             
                             ForEach(shoppingList) { ingredient in
+                                Divider()
                                 HStack(alignment: .firstTextBaseline) {
                                     Text("\(ingredient.count)x")
                                         .font(.headline)
                                         .bold()
                                         .foregroundColor(Color("Money"))
-                                        .frame(width: 40, alignment: .leading)
+                                        .frame(width: 30, alignment: .leading)
                                     
                                     Text(ingredient.name)
                                         .font(.body)
@@ -110,7 +67,7 @@ struct ShoppingListView: View {
                                     Spacer()
                                 }
                                 .padding(.vertical, 2)
-                                Divider()
+//                                Divider()
                             }
                         }
                         .padding()
@@ -130,7 +87,6 @@ struct ShoppingListView: View {
                                 }
                             }
                         }
-                        .padding()
                     }
                 }
                 .padding()
@@ -141,4 +97,26 @@ struct ShoppingListView: View {
             }
         }
     }
+}
+
+#Preview {
+    ShoppingListView(items: [
+        CheckedItem(
+            id: UUID(),
+            name: "Bear Grenade",
+            type: .trapper,
+            price: 12.50,
+            ingredients: ["x5 Perfect Bear Pelt", "x1 Fat"],
+            sourcePeltName: "Black Bear"
+        ),
+        CheckedItem(
+            id: UUID(),
+            name: "Snake Hat",
+            type: .trapper,
+            price: 22.00,
+            ingredients: ["x2 Perfect Snake Skin"],
+            sourcePeltName: "Snake"
+        )
+    ])
+    .environmentObject(StoreKitManager())
 }

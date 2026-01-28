@@ -120,3 +120,10 @@ struct ChecklistRow: View {
         .buttonStyle(.plain) // Removes default list row styling for the NavigationLink
     }
 }
+
+#Preview {
+    ChecklistTab()
+        .environment(DataManager())
+        .environmentObject(StoreKitManager())
+}
+

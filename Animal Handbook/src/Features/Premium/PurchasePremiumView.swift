@@ -106,6 +106,7 @@ struct PurchasePremiumView: View {
     }
     
     private func calculateIdealHeight() -> CGFloat {
+        #if os(iOS)
         let screenHeight = UIScreen.main.bounds.height
         // On smaller devices (like mini), use more of the screen
         // On larger devices (like Pro Max or iPad), use less
@@ -116,6 +117,9 @@ struct PurchasePremiumView: View {
         } else {
             return screenHeight * 0.70  // Larger iPhones and iPads
         }
+        #else
+        return 600
+        #endif
     }
 }
 

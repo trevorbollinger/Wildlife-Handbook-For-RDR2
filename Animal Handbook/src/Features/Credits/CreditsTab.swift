@@ -200,8 +200,11 @@ struct CreditsTab: View {
                     "Thank you so much for the support! Your donation will go towards keeping the app on the App Store. You are awesome! 🎉"
                 )
             }
+            .sheet(isPresented: $storeKit.showPremiumSheet) {
+                PurchasePremiumView()
+                    .environmentObject(storeKit)
+            }
 
-            .withPremiumSheet()
         }
     }
 

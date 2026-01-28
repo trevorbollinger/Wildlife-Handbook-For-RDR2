@@ -104,86 +104,87 @@ struct ItemDetail: View {
                 }
 
                 // Status Section
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Status")
-                        .font(.title2)
-                        .bold()
+                if storeKitManager.hasPremium {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("Status")
+                            .font(.title2)
+                            .bold()
 
-                    // Collected Toggle
-                    Button(action: {
-                        if !storeKitManager.hasPremium {
-                            storeKitManager.showPremiumSheet = true
-                        } else {
+                        // Collected Toggle
+                        Button(action: {
                             withAnimation {
                                 checklistManager.toggleCollected(item.name)
                             }
-                        }
-                    }) {
-                        HStack {
-                            Text(
-                                checklistManager.isCollected(item.name)
-                                    ? "Collected" : "Not Collected"
-                            )
-                            .font(.headline)
-                            .foregroundColor(
-                                checklistManager.isCollected(item.name)
-                                    ? Color("Money") : .primary
-                            )
+                        }) {
+                            HStack {
+                                Text(
+                                    checklistManager.isCollected(item.name)
+                                        ? "Collected" : "Not Collected"
+                                )
+                                .font(.headline)
+                                .foregroundColor(
+                                    checklistManager.isCollected(item.name)
+                                        ? Color("Money") : .primary
+                                )
 
-                            Spacer()
+                                Spacer()
 
-                            Image(systemName: checklistManager.isCollected(item.name) ? "checkmark.circle.fill" : "circle")
-                                .font(.title2)
-                                .foregroundColor(checklistManager.isCollected(item.name) ? Color("Money") : .secondary)
-                        }
-                    }
-                    .padding()
-                    .background(Color.primary.opacity(0.05))
-                    .cornerRadius(8)
-
-                    // Shopping List Toggle
-                    Button(action: {
-                        if !storeKitManager.hasPremium {
-                            storeKitManager.showPremiumSheet = true
-                        } else {
-                            withAnimation {
-                                checklistManager.toggleTracked(item.name)
+                                Image(systemName: checklistManager.isCollected(item.name) ? "checkmark.circle.fill" : "circle")
+                                    .font(.title2)
+                                    .foregroundColor(checklistManager.isCollected(item.name) ? Color("Money") : .secondary)
                             }
                         }
-                    }) {
-                        HStack {
-                            Text(
-                                checklistManager.isTracked(item.name)
-                                    ? "Tracked in Shopping List"
-                                    : "Add to Shopping List"
-                            )
-                            .font(.headline)
-                            .foregroundColor(
-                                checklistManager.isTracked(item.name)
-                                    ? Color("Money") : .primary
-                            )
+                        .padding()
+                        .background(Color.primary.opacity(0.05))
+                        .cornerRadius(8)
 
-                            Spacer()
+                        // Shopping List Toggle
+                        if !checklistManager.isCollected(item.name) {
+                            Button(action: {
+                                withAnimation {
+                                    checklistManager.toggleTracked(item.name)
+                                }
+                            }) {
+                                HStack {
+                                    Text(
+                                        checklistManager.isTracked(item.name)
+                                            ? "Tracked in Shopping List"
+                                            : "Add to Shopping List"
+                                    )
+                                    .font(.headline)
+                                    .foregroundColor(
+                                        checklistManager.isTracked(item.name)
+                                            ? Color("Money") : .primary
+                                    )
 
-                            Image(systemName: checklistManager.isTracked(item.name) ? "cart.badge.minus" : "cart.badge.plus")
-                                .font(.title2)
-                                .foregroundColor(checklistManager.isTracked(item.name) ? Color("Money") : .secondary)
+                                    Spacer()
+
+                                    Image(systemName: checklistManager.isTracked(item.name) ? "cart.badge.minus" : "cart.badge.plus")
+                                        .font(.title2)
+                                        .foregroundColor(checklistManager.isTracked(item.name) ? Color("Money") : .secondary)
+                                }
+                            }
+                            .padding()
+                            .background(Color.primary.opacity(0.05))
+                            .cornerRadius(8)
                         }
                     }
                     .padding()
-                    .background(Color.primary.opacity(0.05))
-                    .cornerRadius(8)
+                    .modifier(GlassEffectModifier())
                 }
-                .padding()
-                .modifier(GlassEffectModifier())
 
                 Spacer()
             }
             .padding()
         }
         .navigationTitle("")
+        #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
-        .withPremiumSheet()
+        #endif
+        .sheet(isPresented: $storeKitManager.showPremiumSheet) {
+            PurchasePremiumView()
+                .environmentObject(storeKitManager)
+        }
     }
 }
 
@@ -202,6 +203,7 @@ struct ItemDetail: View {
                     sourcePeltName: "Legendary Bear Pelt"
                 )
             )
+            .environmentObject(StoreKitManager())
         }
     }
 }

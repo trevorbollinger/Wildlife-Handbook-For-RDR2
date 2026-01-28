@@ -68,4 +68,10 @@ struct ChecklistTab: View {
     }
 }
 
+#Preview {
+    ChecklistTab()
+        .environment(DataManager())
+        .environmentObject(StoreKitManager())
+}
+
 

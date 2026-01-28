@@ -7,6 +7,7 @@
 
 import SwiftData
 import SwiftUI
+import WidgetKit
 
 // MARK: - Split View List Tab for iPad
 // MARK: - Split View List Tab for iPad
@@ -258,7 +259,31 @@ struct HandbookTabs: View {
                 storeKitManager.markReviewRequested()
             }
         }
-
+        .onChange(of: checklistManager.trackedItems) { _, _ in syncWidget() }
+        .onChange(of: checklistManager.collectedItems) { _, _ in syncWidget() }
+        .onChange(of: storeKitManager.hasPremium) { _, _ in syncWidget() }
+        .onAppear { syncWidget() } // Ensure widget is up to date on app launch
+        .onOpenURL { url in
+            if url.scheme == "animalhandbook" && url.host == "shoppinglist" {
+                selectedTab = 5
+            }
+        }
+    }
+    
+    private func syncWidget() {
+        let items = trackedItems
+        let shoppingList = ShoppingListHelper.generateShoppingList(from: items)
+        let hasPremium = storeKitManager.hasPremium
+        
+        let sharedDefaults = UserDefaults(suiteName: "group.com.trevorbollinger.animalhandbook")
+        
+        if let data = try? JSONEncoder().encode(shoppingList) {
+            sharedDefaults?.set(data, forKey: "shoppingList")
+        }
+        
+        sharedDefaults?.set(hasPremium, forKey: "hasPremium")
+        
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }
 

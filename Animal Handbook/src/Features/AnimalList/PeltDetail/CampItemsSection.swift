@@ -57,21 +57,23 @@ struct CampItemRow: View {
                 Spacer()
                 
                 // Tracking Button
-                Button(action: {
-                    if !storeKitManager.hasPremium {
-                        storeKitManager.showPremiumSheet = true
-                    } else {
-                        withAnimation(.snappy) {
-                            checklistManager.toggleTracked(item.name)
+                if !checklistManager.isChecked(item.name) {
+                    Button(action: {
+                        if !storeKitManager.hasPremium {
+                            storeKitManager.showPremiumSheet = true
+                        } else {
+                            withAnimation(.snappy) {
+                                checklistManager.toggleTracked(item.name)
+                            }
                         }
+                    }) {
+                        Image(systemName: checklistManager.isTracked(item.name) ? "cart.badge.minus" : "cart.badge.plus")
+                            .font(.title2)
+                            .foregroundColor(checklistManager.isTracked(item.name) ? Color("Money") : .secondary)
                     }
-                }) {
-                    Image(systemName: checklistManager.isTracked(item.name) ? "cart.badge.minus" : "cart.badge.plus")
-                        .font(.title2)
-                        .foregroundColor(checklistManager.isTracked(item.name) ? Color("Money") : .secondary)
+                    .buttonStyle(.plain)
+                    .padding(.leading, 8)
                 }
-                .buttonStyle(.plain)
-                .padding(.leading, 8)
 
                 // Checkbox
                 Button(action: {
@@ -182,6 +184,7 @@ struct CampItemRow: View {
                     ),
                     compact: true
                 )
+                .environmentObject(StoreKitManager())
             }
         }
 }

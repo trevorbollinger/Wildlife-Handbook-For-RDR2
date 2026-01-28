@@ -51,19 +51,3 @@ extension Material {
     }
 }
 
-struct PremiumSheetModifier: ViewModifier {
-    @EnvironmentObject var storeKitManager: StoreKitManager
-
-    func body(content: Content) -> some View {
-        content
-            .sheet(isPresented: $storeKitManager.showPremiumSheet) {
-                PurchasePremiumView()
-            }
-    }
-}
-
-extension View {
-    func withPremiumSheet() -> some View {
-        modifier(PremiumSheetModifier())
-    }
-}

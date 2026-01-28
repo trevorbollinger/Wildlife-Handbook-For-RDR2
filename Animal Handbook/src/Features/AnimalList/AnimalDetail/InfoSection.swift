@@ -27,7 +27,7 @@ struct InfoSection<Content: View>: View {
                 // Title
                 if title != "" {
                     Text(title)
-                        .font(.title2)
+                        .font(.title3)
                         .bold()
                     // Spacer
                     Spacer()
@@ -49,3 +49,25 @@ struct InfoSection<Content: View>: View {
     }
 }
 
+#Preview {
+    NavigationStack {
+        AnimalDetail(
+            animal: Animal(
+                id: UUID(),
+                name: "Alligator",
+                description:
+                    "Native to the swamps and bayous of Lemoyne, the American Alligator is a carnivorous apex predator.",
+                location: ["Lemoyne", "Lagras"],
+                loot: [
+                    "Big Game Meat", "Alligator Tooth",
+                    "Perfect Alligator Skin",
+                ],
+                tips: "Use a rifle for a clean kill.",
+                trivia: "They are older than dinosaurs.",
+                danger: "5"
+            ),
+            pelts: []
+        )
+        .environmentObject(StoreKitManager())
+    }
+}
