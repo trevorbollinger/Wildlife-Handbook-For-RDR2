@@ -124,7 +124,7 @@ class StoreKitManager: ObservableObject {
             if case .verified(let transaction) = result {
                 print("Found entitlement: \(transaction.productID)")
                 if transaction.productID == "premium" {
-                    print("✅ Premium entitlement verified!")
+                    print("Premium entitlement verified!")
                     hasPremium = true
                 }
             }
